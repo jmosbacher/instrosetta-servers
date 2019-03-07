@@ -64,7 +64,7 @@ message Distance {
     string units = 2;
     enum Direction {
         undefined = 0;
-        backward = 1;
+        forward = 1;
         backward = 2;
     }
     Direction direction = 3;
