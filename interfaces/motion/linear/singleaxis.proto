@@ -5,10 +5,11 @@ package devices.motion.linear.singleaxis;
 service SingleLinearAxis {
     rpc ScanDevices(ScanDevicesRequest) returns (stream Device) {}
     rpc Connect(ConnectRequest) returns (Device) {}
+    rpc Disconnect(DisconnectRequest) returns (Device) {}
     rpc GetRange(GetRangeRequest) returns (StageRange) {}
     rpc GetPosition(GetPositionRequest) returns (Position) {}
     rpc MoveAbsolute(MoveAbsoluteRequest) returns (stream Position) {}
-    rpc MoveRelative(MoveRelativeRequest) returns (stream Distance) {}
+    rpc MoveRelative(MoveRelativeRequest) returns (stream Position) {}
 }
 
 message ScanDevicesRequest {
@@ -31,10 +32,15 @@ message Device {
 message ConnectRequest {
     string name = 1;
     Device device = 2;
-    float timeout = 3;
+    float timeout = 3; // seconds
     float polling_interval = 4;
 }
 
+message DisconnectRequest {
+    string name = 1;
+    float timeout = 2; // seconds
+
+}
 
 message GetRangeRequest {
     string name = 1;
@@ -56,6 +62,12 @@ message GetPositionRequest {
 message Distance {
     double value = 1;
     string units = 2;
+    enum Direction {
+        undefined = 0;
+        backward = 1;
+        backward = 2;
+    }
+    Direction direction = 3;
 }
 
 message Position {
