@@ -3,6 +3,7 @@ syntax = "proto3";
 package devices.motion.linear.singleaxis;
 
 service SingleLinearAxis {
+    
     rpc ScanDevices(ScanDevicesRequest) returns (stream Device) {}
     rpc Connect(ConnectRequest) returns (Device) {}
     rpc Disconnect(DisconnectRequest) returns (Device) {}
