@@ -3,7 +3,7 @@ syntax = "proto3";
 package devices.motion.linear.singleaxis;
 
 service SingleLinearAxis {
-    rpc Echo(string) returns (string) {}
+    rpc Echo(TextMessage) returns (TextMessage) {}
     rpc ScanDevices(ScanDevicesRequest) returns (stream Device) {}
     rpc Connect(ConnectRequest) returns (Device) {}
     rpc Disconnect(DisconnectRequest) returns (Device) {}
@@ -11,6 +11,12 @@ service SingleLinearAxis {
     rpc GetPosition(GetPositionRequest) returns (Position) {}
     rpc MoveAbsolute(MoveAbsoluteRequest) returns (stream Position) {}
     rpc MoveRelative(MoveRelativeRequest) returns (stream Position) {}
+}
+
+
+message TextMessage {
+    string name = 1;
+    string content = 2;
 }
 
 message ScanDevicesRequest {
