@@ -7,6 +7,7 @@ service SingleLinearAxis {
     rpc ScanDevices(ScanDevicesRequest) returns (stream Device) {}
     rpc Connect(ConnectRequest) returns (Device) {}
     rpc Disconnect(DisconnectRequest) returns (Device) {}
+    rpc HomeMotor(HomeMotorRequest) returns (Position) {}
     rpc GetRange(GetRangeRequest) returns (StageRange) {}
     rpc GetPosition(GetPositionRequest) returns (Position) {}
     rpc MoveAbsolute(MoveAbsoluteRequest) returns (stream Position) {}
@@ -20,12 +21,14 @@ message TextMessage {
 }
 
 message ScanDevicesRequest {
+    string name = 1;
+    bool include_simulated = 2;
 
 }
 
 message Device {
     string name = 1;
-    uint32 serial_number = 2;
+    string serial_number = 2;
     string description = 3;
 
     enum MotorType {
@@ -47,6 +50,9 @@ message DisconnectRequest {
     string name = 1;
     float timeout = 2; // seconds
 
+}
+message HomeMotorRequest {
+    string name = 1;
 }
 
 message GetRangeRequest {
