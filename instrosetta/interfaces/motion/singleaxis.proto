@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-package devices.motion.linear.singleaxis;
+package devices.motion.singleaxis;
 
-service SingleLinearAxis {
+service SingleAxis {
     rpc Echo(TextMessage) returns (TextMessage) {}
     rpc ScanDevices(ScanDevicesRequest) returns (stream Device) {}
     rpc Connect(ConnectRequest) returns (Device) {}
@@ -29,14 +29,16 @@ message ScanDevicesRequest {
 message Device {
     string name = 1;
     string serial_number = 2;
-    string description = 3;
+    string com_port = 3;
+    string description = 4;
 
     enum MotorType {
         DC_SERVO = 0;
         STEPPER = 1;
     }
 
-    MotorType motor_type = 4; 
+    MotorType motor_type = 5; 
+
 }
 
 message ConnectRequest {
