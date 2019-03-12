@@ -1,0 +1,95 @@
+syntax = "proto3";
+
+package devices.optics.monochromator;
+
+
+
+service Monochromator {
+    rpc Connect(ConnectRequest) returns (ConnectResponse) {}
+
+    rpc GetWavelengthRange(GetWavelengthRangeRequest) returns (GetWavelengthRangeResponse) {}
+    rpc GetWavelength(GetWavelengthRequest) returns (GetWavelengthResponse) {}
+    rpc SetWavelength(SetWavelengthRequest) returns (SetWavelengthResponse) {}
+
+    rpc GetGratingRange(GetGratingOptionsRequest) returns (GetGratingOptionsResponse) {}
+    rpc GetGrating(GetGratingRequest) returns (GetGratingResponse) {}
+    rpc SetGrating(SetGratingRequest) returns (SetGratingResponse) {}
+}
+
+message ConnectRequest {
+    string name = 1; 
+    string serial_number = 2;
+    string serial_port = 3;
+    uint32 baudrate = 4; 
+    float timeout = 6;
+}
+
+message ConnectResponse {
+    string name = 1; 
+}
+
+
+message GetWavelengthRangeRequest {
+    string name = 1; 
+}
+
+message GetWavelengthRangeResponse {
+    string name = 1; 
+    float minimum = 2;
+    float maximum = 3;
+    string units = 4;
+}
+
+message GetWavelengthRequest {
+    string name = 1; 
+}
+
+message GetWavelengthResponse {
+    string name = 1; 
+    float wavelength = 2;
+    string units = 3;
+}
+
+message SetWavelengthRequest {
+    string name = 1; 
+    float wavelength = 2;
+    string units = 3;
+}
+
+message SetWavelengthResponse {
+    string name = 1; 
+    float wavelength = 2;
+    string units = 3;
+}
+
+
+
+message GetGratingOptionsRequest {
+    string name = 1; 
+}
+
+message GetGratingOptionsResponse {
+    string name = 1; 
+    repeated uint32 options = 2;
+    
+}
+
+message GetGratingRequest {
+    string name = 1; 
+}
+
+message GetGratingResponse {
+    string name = 1; 
+    uint32 grating = 2;
+}
+
+message SetGratingRequest {
+    string name = 1; 
+    uint32 grating = 2;
+}
+
+message SetGratingResponse {
+    string name = 1; 
+    uint32 grating = 2;
+}
+
