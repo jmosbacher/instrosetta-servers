@@ -1,11 +1,12 @@
 syntax = "proto3";
 
-package devices.optics.monochromator;
+package devices.optomechanics.monochromator;
 
 
 
 service Monochromator {
     rpc Connect(ConnectRequest) returns (ConnectResponse) {}
+    rpc Disconnect(DisconnectRequest) returns (DisconnectResponse) {}
 
     rpc GetWavelengthRange(GetWavelengthRangeRequest) returns (GetWavelengthRangeResponse) {}
     rpc GetWavelength(GetWavelengthRequest) returns (GetWavelengthResponse) {}
@@ -28,6 +29,13 @@ message ConnectResponse {
     string name = 1; 
 }
 
+message DisconnectRequest {
+    string name = 1; 
+}
+
+message DisconnectResponse {
+    string name = 1; 
+}
 
 message GetWavelengthRangeRequest {
     string name = 1; 
