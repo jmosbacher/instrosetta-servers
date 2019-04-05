@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package devices.motion.singleaxis;
+package interfaces.motion_control.singleaxis;
 
 service SingleAxis {
     rpc Echo(TextMessage) returns (TextMessage) {}
