@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package interfaces.optomechanics.monochromator;
+package instrosetta.interfaces.optomechanics.monochromator;
 
 
 
