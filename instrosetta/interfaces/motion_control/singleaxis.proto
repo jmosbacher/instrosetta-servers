@@ -1,5 +1,6 @@
 syntax = "proto3";
 
+
 package instrosetta.interfaces.motion_control.singleaxis;
 
 service SingleAxis {

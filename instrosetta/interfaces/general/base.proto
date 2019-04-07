@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package instrosetta.interfaces.general.base;
+
+service Observer{
+    rpc GetServerDetails(GetServerDetailsRequest) returns (GetServerDetailsResponse) {}
+
+}
+
+message GetServerDetailsRequest {
+    string name = 1;
+}
+
+message GetServerDetailsResponse {
+    string name = 1;
+}
