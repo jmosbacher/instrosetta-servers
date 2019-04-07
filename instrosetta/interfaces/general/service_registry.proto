@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package instrosetta.interfaces.general.service_registry.v1;
+
+service ServiceRegistry{
+    rpc GetActiveServers(GetActiveServersRequest) returns (GetActiveServersResponse) {}
+    rpc GetConnectedServers(GetConnectedServersRequest) returns (GetConnectedServersResponse) {}
+
+}
+
+message ServerDetails {
+    string name = 1;
+}
+
+message GetActiveServersRequest {
+    string name = 1;
+}
+
+message GetActiveServersResponse {
+    string name = 1;
+}
+
+message GetConnectedServersRequest {
+    string name = 1;
+}
+
+message GetConnectedServersResponse {
+    string name = 1;
+}
