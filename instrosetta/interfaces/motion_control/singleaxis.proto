@@ -34,8 +34,9 @@ message Device {
     string description = 4;
 
     enum MotorType {
-        DC_SERVO = 0;
-        STEPPER = 1;
+        UNKNOWN = 0;
+        DCSERVO = 1;
+        STEPPER = 2;
     }
 
     MotorType motor_type = 5; 
