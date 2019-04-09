@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package instrosetta.common.units.v1;
+
+message PhysicalUnit {
+    string name = 1;
+    string unit_name = 2;
+    repeated string aliases = 3;
+    int32 length = 4;
+    int32 time = 5;
+    int32 mass = 6;
+}
+
+message PhysicalQuantity {
+    string name = 1;
+    PhysicalUnit unit = 2;
+    double magnitude = 3;
+}
