@@ -2,16 +2,16 @@ syntax = "proto3";
 
 package instrosetta.interfaces.light_analysis.spectrograph.v1;
 
+import "instrosetta/common/connection.proto";
+
 service Spectrograph {
     rpc Connect(ConnectRequest) returns (ConnectResponse) {}
     rpc Disconnect(DisconnectRequest) returns (DisconnectResponse) {}
     rpc Save(SaveRequest) returns (SaveResponse) {}
     rpc Run(RunRequest) returns (RunResponse) {}
     
-    rpc GetSavePath(GetSavePathRequest) returns (GetSavePathResponse) {}
-    rpc SetSavePath(SetSavePathRequest) returns (SetSavePathResponse) {}
-    
     rpc GetGrating(GetGratingRequest) returns (GetGratingResponse) {}
+    rpc GetGratingOptions(GetGratingOptionsRequest) returns (GetGratingOptionsResponse) {}
     rpc SetGrating(SetGratingRequest) returns (SetGratingResponse) {}
     
     rpc GetShutter(GetShutterRequest) returns (GetShutterResponse) {}
@@ -36,89 +36,64 @@ service Spectrograph {
 // a unique identifier of the request-response session.
 // How the uid is generated is implementation specific and should not be relied on for functionality.
 
-message EchoRequest {
-    string name = 1; 
-}
 
-message EchoResponse {
-    string name = 1; 
-}
-message ConnectRequest {
-    string name = 1; 
-}
 
-message ConnectResponse {
-    string name = 1; 
-}
-message DisconnectRequest {
-    string name = 1; 
-}
-
-message DisconnectResponse {
-    string name = 1; 
-}
 message SaveRequest {
     string name = 1; 
+    string save_path = 2;
+
 }
 
 message SaveResponse {
     string name = 1; 
+    bool saved = 2;
 }
+
 message RunRequest {
-    string name = 1; 
+    string name = 1;
 }
 
 message RunResponse {
     string name = 1; 
+    bool running = 2;
 }
 
-message GetSavePathRequest {
+
+message Grating {
     string name = 1;
-    string units = 2;
+    int32 position = 2;
+    int32 blazed_wavelength = 3;
+    int32 line_density = 4;
+    string details = 5;
 }
 
-message GetSavePathResponse {
+message GetGratingOptionsRequest {
     string name = 1;
-    double value = 2;
-    string units = 3;
 }
 
-message SetSavePathRequest {
-    string name = 1; 
-    double value = 2;
-    string units = 3;
+message GetGratingOptionsResponse {
+    string name = 1;
+    repeated Grating options = 2;
 }
-
-message SetSavePathResponse {
-    string name = 1; 
-    double value = 2;
-    string units = 3;
-}
-
 
 message GetGratingRequest {
     string name = 1;
-    string units = 2;
 }
 
 message GetGratingResponse {
     string name = 1;
-    double value = 2;
-    string units = 3;
+    Grating grating = 2;
 }
 
 message SetGratingRequest {
     string name = 1; 
-    double value = 2;
-    string units = 3;
+    Grating grating = 2;
 }
 
 message SetGratingResponse {
     string name = 1; 
-    double value = 2;
-    string units = 3;
+    Grating grating = 2;
 }
-
 
 message GetShutterRequest {
     string name = 1;
