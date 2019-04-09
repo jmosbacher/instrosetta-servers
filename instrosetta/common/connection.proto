@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+// package instrosetta.common.connection.v1;
+
+// The first property of all messages is called "name" and reserved for
+// a unique identifier (uid) of the request-response session.
+// How the uid is generated is implementation specific and should not be relied on for functionality.
+
+
+message ConnectRequest {
+    string name = 1; 
+    string device_id = 2;
+    float timeout = 3;
+}
+
+message ConnectResponse {
+    string name = 1; 
+    bool connected = 2;
+}
+
+message DisconnectRequest {
+    string name = 1;
+    float timeout = 2;
+}
+
+message DisconnectResponse {
+    string name = 1; 
+    bool disconnected = 2;
+}

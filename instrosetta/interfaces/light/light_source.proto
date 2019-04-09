@@ -1,0 +1,67 @@
+syntax = "proto3";
+
+package instrosetta.interfaces.light.light_source.v1;
+
+service LightSource {
+    rpc Echo(EchoRequest) returns (EchoResponse) {}
+    rpc Connect(ConnectRequest) returns (ConnectResponse) {}
+    rpc Disconnect(DisconnectRequest) returns (DisconnectResponse) {}
+    
+    rpc GetPower(GetPowerRequest) returns (GetPowerResponse) {}
+    rpc SetPower(SetPowerRequest) returns (SetPowerResponse) {}
+    
+    
+}
+
+// The first property of all messages is called "name" and reserved for
+// a unique identifier of the request-response session.
+// How the uid is generated is implementation specific and should not be relied on for functionality.
+
+message EchoRequest {
+    string name = 1; 
+}
+
+message EchoResponse {
+    string name = 1; 
+}
+message ConnectRequest {
+    string name = 1; 
+}
+
+message ConnectResponse {
+    string name = 1; 
+}
+message DisconnectRequest {
+    string name = 1; 
+}
+
+message DisconnectResponse {
+    string name = 1; 
+}
+
+message GetPowerRequest {
+    string name = 1;
+    string units = 2;
+}
+
+message GetPowerResponse {
+    string name = 1;
+    double value = 2;
+    string units = 3;
+}
+
+message SetPowerRequest {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+message SetPowerResponse {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+
+
+

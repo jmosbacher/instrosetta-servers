@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package instrosetta.common.units.v1;
+// package instrosetta.common.units.v1;
 
 message PhysicalUnit {
     string name = 1;

@@ -1,0 +1,244 @@
+syntax = "proto3";
+
+package instrosetta.interfaces.light_analysis.spectrograph.v1;
+
+service Spectrograph {
+    rpc Connect(ConnectRequest) returns (ConnectResponse) {}
+    rpc Disconnect(DisconnectRequest) returns (DisconnectResponse) {}
+    rpc Save(SaveRequest) returns (SaveResponse) {}
+    rpc Run(RunRequest) returns (RunResponse) {}
+    
+    rpc GetSavePath(GetSavePathRequest) returns (GetSavePathResponse) {}
+    rpc SetSavePath(SetSavePathRequest) returns (SetSavePathResponse) {}
+    
+    rpc GetGrating(GetGratingRequest) returns (GetGratingResponse) {}
+    rpc SetGrating(SetGratingRequest) returns (SetGratingResponse) {}
+    
+    rpc GetShutter(GetShutterRequest) returns (GetShutterResponse) {}
+    rpc SetShutter(SetShutterRequest) returns (SetShutterResponse) {}
+    
+    rpc GetWavelength(GetWavelengthRequest) returns (GetWavelengthResponse) {}
+    rpc SetWavelength(SetWavelengthRequest) returns (SetWavelengthResponse) {}
+    
+    rpc GetExposure(GetExposureRequest) returns (GetExposureResponse) {}
+    rpc SetExposure(SetExposureRequest) returns (SetExposureResponse) {}
+    
+    rpc GetSlitWidth(GetSlitWidthRequest) returns (GetSlitWidthResponse) {}
+    rpc SetSlitWidth(SetSlitWidthRequest) returns (SetSlitWidthResponse) {}
+    
+    rpc GetConnectionDetails(GetConnectionDetailsRequest) returns (GetConnectionDetailsResponse) {}
+    rpc SetConnectionDetails(SetConnectionDetailsRequest) returns (SetConnectionDetailsResponse) {}
+    
+    
+}
+
+// The first property of all messages is called "name" and reserved for
+// a unique identifier of the request-response session.
+// How the uid is generated is implementation specific and should not be relied on for functionality.
+
+message EchoRequest {
+    string name = 1; 
+}
+
+message EchoResponse {
+    string name = 1; 
+}
+message ConnectRequest {
+    string name = 1; 
+}
+
+message ConnectResponse {
+    string name = 1; 
+}
+message DisconnectRequest {
+    string name = 1; 
+}
+
+message DisconnectResponse {
+    string name = 1; 
+}
+message SaveRequest {
+    string name = 1; 
+}
+
+message SaveResponse {
+    string name = 1; 
+}
+message RunRequest {
+    string name = 1; 
+}
+
+message RunResponse {
+    string name = 1; 
+}
+
+message GetSavePathRequest {
+    string name = 1;
+    string units = 2;
+}
+
+message GetSavePathResponse {
+    string name = 1;
+    double value = 2;
+    string units = 3;
+}
+
+message SetSavePathRequest {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+message SetSavePathResponse {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+
+message GetGratingRequest {
+    string name = 1;
+    string units = 2;
+}
+
+message GetGratingResponse {
+    string name = 1;
+    double value = 2;
+    string units = 3;
+}
+
+message SetGratingRequest {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+message SetGratingResponse {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+
+message GetShutterRequest {
+    string name = 1;
+    string units = 2;
+}
+
+message GetShutterResponse {
+    string name = 1;
+    double value = 2;
+    string units = 3;
+}
+
+message SetShutterRequest {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+message SetShutterResponse {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+
+message GetWavelengthRequest {
+    string name = 1;
+    string units = 2;
+}
+
+message GetWavelengthResponse {
+    string name = 1;
+    double value = 2;
+    string units = 3;
+}
+
+message SetWavelengthRequest {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+message SetWavelengthResponse {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+
+message GetExposureRequest {
+    string name = 1;
+    string units = 2;
+}
+
+message GetExposureResponse {
+    string name = 1;
+    double value = 2;
+    string units = 3;
+}
+
+message SetExposureRequest {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+message SetExposureResponse {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+
+message GetSlitWidthRequest {
+    string name = 1;
+    string units = 2;
+}
+
+message GetSlitWidthResponse {
+    string name = 1;
+    double value = 2;
+    string units = 3;
+}
+
+message SetSlitWidthRequest {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+message SetSlitWidthResponse {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+
+message GetConnectionDetailsRequest {
+    string name = 1;
+    string units = 2;
+}
+
+message GetConnectionDetailsResponse {
+    string name = 1;
+    double value = 2;
+    string units = 3;
+}
+
+message SetConnectionDetailsRequest {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+message SetConnectionDetailsResponse {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+
+
+

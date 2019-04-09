@@ -1,0 +1,129 @@
+syntax = "proto3";
+
+package instrosetta.interfaces.electronics.simple_switch.v1;
+
+service SimpleSwitch {
+    rpc Echo(EchoRequest) returns (EchoResponse) {}
+    rpc Connect(ConnectRequest) returns (ConnectResponse) {}
+    rpc Disconnect(DisconnectRequest) returns (DisconnectResponse) {}
+    rpc Flip(FlipRequest) returns (FlipResponse) {}
+    
+    rpc GetState(GetStateRequest) returns (GetStateResponse) {}
+    rpc SetState(SetStateRequest) returns (SetStateResponse) {}
+    
+    rpc GetBoard(GetBoardRequest) returns (GetBoardResponse) {}
+    rpc SetBoard(SetBoardRequest) returns (SetBoardResponse) {}
+    
+    rpc GetPin(GetPinRequest) returns (GetPinResponse) {}
+    rpc SetPin(SetPinRequest) returns (SetPinResponse) {}
+    
+    
+}
+
+// The first property of all messages is called "name" and reserved for
+// a unique identifier of the request-response session.
+// How the uid is generated is implementation specific and should not be relied on for functionality.
+
+message EchoRequest {
+    string name = 1; 
+}
+
+message EchoResponse {
+    string name = 1; 
+}
+message ConnectRequest {
+    string name = 1; 
+}
+
+message ConnectResponse {
+    string name = 1; 
+}
+message DisconnectRequest {
+    string name = 1; 
+}
+
+message DisconnectResponse {
+    string name = 1; 
+}
+message FlipRequest {
+    string name = 1; 
+}
+
+message FlipResponse {
+    string name = 1; 
+}
+
+message GetStateRequest {
+    string name = 1;
+    string units = 2;
+}
+
+message GetStateResponse {
+    string name = 1;
+    double value = 2;
+    string units = 3;
+}
+
+message SetStateRequest {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+message SetStateResponse {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+
+message GetBoardRequest {
+    string name = 1;
+    string units = 2;
+}
+
+message GetBoardResponse {
+    string name = 1;
+    double value = 2;
+    string units = 3;
+}
+
+message SetBoardRequest {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+message SetBoardResponse {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+
+message GetPinRequest {
+    string name = 1;
+    string units = 2;
+}
+
+message GetPinResponse {
+    string name = 1;
+    double value = 2;
+    string units = 3;
+}
+
+message SetPinRequest {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+message SetPinResponse {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+
+
+

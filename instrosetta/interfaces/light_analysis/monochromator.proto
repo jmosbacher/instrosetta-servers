@@ -3,7 +3,6 @@ syntax = "proto3";
 package instrosetta.interfaces.light_analysis.monochromator;
 
 
-
 service Monochromator {
     rpc Connect(ConnectRequest) returns (ConnectResponse) {}
     rpc Disconnect(DisconnectRequest) returns (DisconnectResponse) {}
@@ -69,7 +68,6 @@ message SetWavelengthResponse {
     float wavelength = 2;
     string units = 3;
 }
-
 
 
 message GetGratingOptionsRequest {

@@ -1,0 +1,190 @@
+syntax = "proto3";
+
+package instrosetta.interfaces.data_aquisition.basic_daq.v1;
+
+import "instrosetta/common/connection.proto";
+
+service BasicDaq {
+ 
+    rpc Connect(ConnectRequest) returns (ConnectResponse) {}
+    rpc Disconnect(DisconnectRequest) returns (DisconnectResponse) {}
+    rpc ReadDigital(ReadDigitalRequest) returns (ReadDigitalResponse) {}
+    rpc ReadAnalog(ReadAnalogRequest) returns (ReadAnalogResponse) {}
+    rpc WriteDigital(WriteDigitalRequest) returns (WriteDigitalResponse) {}
+    rpc WriteAnalog(WriteAnalogRequest) returns (WriteAnalogResponse) {}
+    
+    rpc GetDeviceDetails(GetDeviceDetailsRequest) returns (GetDeviceDetailsResponse) {}
+    rpc SetDeviceDetails(SetDeviceDetailsRequest) returns (SetDeviceDetailsResponse) {}
+    
+    rpc GetDigitalOutputs(GetDigitalOutputsRequest) returns (GetDigitalOutputsResponse) {}
+    rpc SetDigitalOutputs(SetDigitalOutputsRequest) returns (SetDigitalOutputsResponse) {}
+    
+    rpc GetDigitalInputs(GetDigitalInputsRequest) returns (GetDigitalInputsResponse) {}
+    rpc SetDigitalInputs(SetDigitalInputsRequest) returns (SetDigitalInputsResponse) {}
+    
+    rpc GetAnalogOutputs(GetAnalogOutputsRequest) returns (GetAnalogOutputsResponse) {}
+    rpc SetAnalogOutputs(SetAnalogOutputsRequest) returns (SetAnalogOutputsResponse) {}
+    
+    rpc GetAnalogInputs(GetAnalogInputsRequest) returns (GetAnalogInputsResponse) {}
+    rpc SetAnalogInputs(SetAnalogInputsRequest) returns (SetAnalogInputsResponse) {}
+    
+    
+}
+
+// The first property of all messages is called "name" and reserved for
+// a unique identifier of the request-response session.
+// How the uid is generated is implementation specific and should not be relied on for functionality.
+
+
+
+message ReadDigitalRequest {
+    string name = 1; 
+}
+
+message ReadDigitalResponse {
+    string name = 1; 
+}
+message ReadAnalogRequest {
+    string name = 1; 
+}
+
+message ReadAnalogResponse {
+    string name = 1; 
+}
+message WriteDigitalRequest {
+    string name = 1; 
+}
+
+message WriteDigitalResponse {
+    string name = 1; 
+}
+message WriteAnalogRequest {
+    string name = 1; 
+}
+
+message WriteAnalogResponse {
+    string name = 1; 
+}
+
+message GetDeviceDetailsRequest {
+    string name = 1;
+    string units = 2;
+}
+
+message GetDeviceDetailsResponse {
+    string name = 1;
+    double value = 2;
+    string units = 3;
+}
+
+message SetDeviceDetailsRequest {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+message SetDeviceDetailsResponse {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+
+message GetDigitalOutputsRequest {
+    string name = 1;
+    string units = 2;
+}
+
+message GetDigitalOutputsResponse {
+    string name = 1;
+    double value = 2;
+    string units = 3;
+}
+
+message SetDigitalOutputsRequest {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+message SetDigitalOutputsResponse {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+
+message GetDigitalInputsRequest {
+    string name = 1;
+    string units = 2;
+}
+
+message GetDigitalInputsResponse {
+    string name = 1;
+    double value = 2;
+    string units = 3;
+}
+
+message SetDigitalInputsRequest {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+message SetDigitalInputsResponse {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+
+message GetAnalogOutputsRequest {
+    string name = 1;
+    string units = 2;
+}
+
+message GetAnalogOutputsResponse {
+    string name = 1;
+    double value = 2;
+    string units = 3;
+}
+
+message SetAnalogOutputsRequest {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+message SetAnalogOutputsResponse {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+
+message GetAnalogInputsRequest {
+    string name = 1;
+    string units = 2;
+}
+
+message GetAnalogInputsResponse {
+    string name = 1;
+    double value = 2;
+    string units = 3;
+}
+
+message SetAnalogInputsRequest {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+message SetAnalogInputsResponse {
+    string name = 1; 
+    double value = 2;
+    string units = 3;
+}
+
+
+
+
