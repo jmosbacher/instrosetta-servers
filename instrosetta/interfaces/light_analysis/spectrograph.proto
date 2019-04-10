@@ -14,8 +14,8 @@ service Spectrograph {
     rpc GetGratingOptions(GetGratingOptionsRequest) returns (GetGratingOptionsResponse) {}
     rpc SetGrating(SetGratingRequest) returns (SetGratingResponse) {}
     
-    rpc GetShutter(GetShutterRequest) returns (GetShutterResponse) {}
-    rpc SetShutter(SetShutterRequest) returns (SetShutterResponse) {}
+    rpc GetShutterState(GetShutterStateRequest) returns (GetShutterStateResponse) {}
+    rpc SetShutterState(SetShutterStateRequest) returns (SetShutterStateResponse) {}
     
     rpc GetWavelength(GetWavelengthRequest) returns (GetWavelengthResponse) {}
     rpc SetWavelength(SetWavelengthRequest) returns (SetWavelengthResponse) {}
@@ -95,27 +95,31 @@ message SetGratingResponse {
     Grating grating = 2;
 }
 
-message GetShutterRequest {
+enum ShutterState {
+    UNDEFINED = 0;
+    AUTO = 1;
+    CLOSED = 2;
+    OPEN = 3;
+    UNKNOWN = 99;
+}
+
+message GetShutterStateRequest {
     string name = 1;
-    string units = 2;
 }
 
-message GetShutterResponse {
+message GetShutterStateResponse {
     string name = 1;
-    double value = 2;
-    string units = 3;
+    ShutterState state = 2;
 }
 
-message SetShutterRequest {
+message SetShutterStateRequest {
     string name = 1; 
-    double value = 2;
-    string units = 3;
+    ShutterState state = 2;
 }
 
-message SetShutterResponse {
+message SetShutterStateResponse {
     string name = 1; 
-    double value = 2;
-    string units = 3;
+    ShutterState state = 2;
 }
 
 
