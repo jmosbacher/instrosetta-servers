@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package instrosetta.common.messages.v1;
+package instrosetta.interfaces.debugging.echo.v1;
 
 // The first property of all messages is called "name" and reserved for
 // a unique identifier (uid) of the request-response session.
