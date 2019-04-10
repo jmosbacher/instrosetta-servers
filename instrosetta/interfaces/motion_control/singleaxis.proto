@@ -1,13 +1,16 @@
 syntax = "proto3";
 
 
-package instrosetta.interfaces.motion_control.singleaxis;
+package instrosetta.interfaces.motion_control.singleaxis.v1;
+
+import "instrosetta/common/connection.proto";
+
 
 service SingleAxis {
-    rpc Echo(TextMessage) returns (TextMessage) {}
-    rpc ScanDevices(ScanDevicesRequest) returns (stream Device) {}
-    rpc Connect(ConnectRequest) returns (Device) {}
-    rpc Disconnect(DisconnectRequest) returns (Device) {}
+    rpc ScanDevices(ScanDevicesRequest) returns (stream ScanDevicesResponse) {}
+    rpc Connect(ConnectRequest) returns (ConnectResponse) {}
+    rpc Disconnect(DisconnectRequest) returns (DisconnectResponse) {}
+
     rpc HomeMotor(HomeMotorRequest) returns (Position) {}
     rpc GetRange(GetRangeRequest) returns (StageRange) {}
     rpc GetPosition(GetPositionRequest) returns (Position) {}
@@ -16,45 +19,16 @@ service SingleAxis {
 }
 
 
-message TextMessage {
-    string name = 1;
-    string content = 2;
-}
-
 message ScanDevicesRequest {
     string name = 1;
     bool include_simulated = 2;
-
 }
 
-message Device {
+message ScanDevicesResponse {
     string name = 1;
-    string serial_number = 2;
-    string com_port = 3;
-    string description = 4;
-
-    enum MotorType {
-        UNKNOWN = 0;
-        DCSERVO = 1;
-        STEPPER = 2;
-    }
-
-    MotorType motor_type = 5; 
-
+    string device_id = 2;
 }
 
-message ConnectRequest {
-    string name = 1;
-    Device device = 2;
-    float timeout = 3; // seconds
-    float polling_interval = 4;
-}
-
-message DisconnectRequest {
-    string name = 1;
-    float timeout = 2; // seconds
-
-}
 message HomeMotorRequest {
     string name = 1;
 }
