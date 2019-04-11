@@ -2,8 +2,10 @@ syntax = "proto3";
 
 package instrosetta.interfaces.light_analysis.power_meter.v1;
 
+import "instrosetta/common/connection.proto";
+
 service PowerMeter {
-    rpc Echo(EchoRequest) returns (EchoResponse) {}
+    
     rpc Connect(ConnectRequest) returns (ConnectResponse) {}
     rpc Disconnect(DisconnectRequest) returns (DisconnectResponse) {}
     
@@ -29,30 +31,6 @@ service PowerMeter {
 // a unique identifier of the request-response session.
 // How the uid is generated is implementation specific and should not be relied on for functionality.
 
-message EchoRequest {
-    string name = 1; 
-    string message = 2; 
-}
-
-message EchoResponse {
-    string name = 1; 
-    string message = 2;
-}
-message ConnectRequest {
-    string name = 1;
-    
-}
-
-message ConnectResponse {
-    string name = 1; 
-}
-message DisconnectRequest {
-    string name = 1; 
-}
-
-message DisconnectResponse {
-    string name = 1; 
-}
 
 message GetPowerRequest {
     string name = 1;
@@ -61,19 +39,19 @@ message GetPowerRequest {
 
 message GetPowerResponse {
     string name = 1;
-    double value = 2;
+    double magnitude = 2;
     string units = 3;
 }
 
 message SetPowerRequest {
     string name = 1; 
-    double value = 2;
+    double magnitude = 2;
     string units = 3;
 }
 
 message SetPowerResponse {
     string name = 1; 
-    double value = 2;
+    double magnitude = 2;
     string units = 3;
 }
 
@@ -85,19 +63,19 @@ message GetCountRequest {
 
 message GetCountResponse {
     string name = 1;
-    double value = 2;
+    double magnitude = 2;
     string units = 3;
 }
 
 message SetCountRequest {
     string name = 1; 
-    double value = 2;
+    double magnitude = 2;
     string units = 3;
 }
 
 message SetCountResponse {
     string name = 1; 
-    double value = 2;
+    double magnitude = 2;
     string units = 3;
 }
 
@@ -109,19 +87,19 @@ message GetWavelengthRequest {
 
 message GetWavelengthResponse {
     string name = 1;
-    double value = 2;
+    double magnitude = 2;
     string units = 3;
 }
 
 message SetWavelengthRequest {
     string name = 1; 
-    double value = 2;
+    double magnitude = 2;
     string units = 3;
 }
 
 message SetWavelengthResponse {
     string name = 1; 
-    double value = 2;
+    double magnitude = 2;
     string units = 3;
 }
 
@@ -133,19 +111,19 @@ message GetModeRequest {
 
 message GetModeResponse {
     string name = 1;
-    double value = 2;
+    double magnitude = 2;
     string units = 3;
 }
 
 message SetModeRequest {
     string name = 1; 
-    double value = 2;
+    double magnitude = 2;
     string units = 3;
 }
 
 message SetModeResponse {
     string name = 1; 
-    double value = 2;
+    double magnitude = 2;
     string units = 3;
 }
 
@@ -157,19 +135,19 @@ message GetAutorangeRequest {
 
 message GetAutorangeResponse {
     string name = 1;
-    double value = 2;
+    double magnitude = 2;
     string units = 3;
 }
 
 message SetAutorangeRequest {
     string name = 1; 
-    double value = 2;
+    double magnitude = 2;
     string units = 3;
 }
 
 message SetAutorangeResponse {
     string name = 1; 
-    double value = 2;
+    double magnitude = 2;
     string units = 3;
 }
 

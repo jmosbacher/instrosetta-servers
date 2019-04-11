@@ -15,10 +15,7 @@ service FilterWheel {
     rpc GetSensorsOptions(GetSensorsOptionsRequest) returns (GetSensorsOptionsResponse) {} 
     rpc GetSensors(GetSensorsRequest) returns (GetSensorsResponse) {}
     rpc SetSensors(SetSensorsRequest) returns (SetSensorsResponse) {}
-    
-    rpc GetPort(GetPortRequest) returns (GetPortResponse) {}
-    rpc SetPort(SetPortRequest) returns (SetPortResponse) {}
-    
+
     rpc GetFilterOptions(GetFilterOptionsRequest) returns (GetFilterOptionsResponse) {} 
     rpc GetFilter(GetFilterRequest) returns (GetFilterResponse) {}
     rpc SetFilter(SetFilterRequest) returns (SetFilterResponse) {}
@@ -56,7 +53,7 @@ message GetSpeedResponse {
 }
 
 message SetSpeedRequest {
-    string name = 1; 
+    string name = 1;
     double value = 2;
     string units = 3;
 }
@@ -73,55 +70,29 @@ message GetSensorsOptionsRequest {
 
 message GetSensorsOptionsResponse {
     string name = 1;
-    repeated double options = 2;
+    repeated uint32 options = 2;
 }
 
 message GetSensorsRequest {
     string name = 1;
-    string units = 2;
 }
 
 message GetSensorsResponse {
     string name = 1;
-    double value = 2;
-    string units = 3;
+    uint32 value = 2;
 }
 
 message SetSensorsRequest {
     string name = 1; 
-    double value = 2;
-    string units = 3;
+    uint32 value = 2;
+    
 }
 
 message SetSensorsResponse {
     string name = 1; 
-    double value = 2;
-    string units = 3;
+    uint32 value = 2;
 }
 
-
-message GetPortRequest {
-    string name = 1;
-    string units = 2;
-}
-
-message GetPortResponse {
-    string name = 1;
-    double value = 2;
-    string units = 3;
-}
-
-message SetPortRequest {
-    string name = 1; 
-    double value = 2;
-    string units = 3;
-}
-
-message SetPortResponse {
-    string name = 1; 
-    double value = 2;
-    string units = 3;
-}
 
 message GetFilterOptionsRequest {
     string name = 1; 

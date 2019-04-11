@@ -9,7 +9,8 @@ service Spectrograph {
     rpc Disconnect(DisconnectRequest) returns (DisconnectResponse) {}
     rpc Save(SaveRequest) returns (SaveResponse) {}
     rpc Run(RunRequest) returns (RunResponse) {}
-    
+    rpc ClearScreen(ClearScreenRequest) returns (ClearScreenResponse) {}
+
     rpc GetGrating(GetGratingRequest) returns (GetGratingResponse) {}
     rpc GetGratingOptions(GetGratingOptionsRequest) returns (GetGratingOptionsResponse) {}
     rpc SetGrating(SetGratingRequest) returns (SetGratingResponse) {}
@@ -25,9 +26,6 @@ service Spectrograph {
     
     rpc GetSlitWidth(GetSlitWidthRequest) returns (GetSlitWidthResponse) {}
     rpc SetSlitWidth(SetSlitWidthRequest) returns (SetSlitWidthResponse) {}
-    
-    rpc GetConnectionDetails(GetConnectionDetailsRequest) returns (GetConnectionDetailsResponse) {}
-    rpc SetConnectionDetails(SetConnectionDetailsRequest) returns (SetConnectionDetailsResponse) {}
     
     
 }
@@ -56,6 +54,14 @@ message RunRequest {
 message RunResponse {
     string name = 1; 
     bool running = 2;
+}
+
+message ClearScreenRequest {
+    string name = 1;
+}
+
+message ClearScreenResponse {
+    string name = 1;
 }
 
 
@@ -130,19 +136,19 @@ message GetWavelengthRequest {
 
 message GetWavelengthResponse {
     string name = 1;
-    double value = 2;
+    double magnitude = 2;
     string units = 3;
 }
 
 message SetWavelengthRequest {
     string name = 1; 
-    double value = 2;
+    double magnitude = 2;
     string units = 3;
 }
 
 message SetWavelengthResponse {
     string name = 1; 
-    double value = 2;
+    double magnitude = 2;
     string units = 3;
 }
 
@@ -154,19 +160,19 @@ message GetExposureRequest {
 
 message GetExposureResponse {
     string name = 1;
-    double value = 2;
+    double magnitude = 2;
     string units = 3;
 }
 
 message SetExposureRequest {
     string name = 1; 
-    double value = 2;
+    double magnitude = 2;
     string units = 3;
 }
 
 message SetExposureResponse {
     string name = 1; 
-    double value = 2;
+    double magnitude = 2;
     string units = 3;
 }
 
@@ -178,19 +184,19 @@ message GetSlitWidthRequest {
 
 message GetSlitWidthResponse {
     string name = 1;
-    double value = 2;
+    double magnitude = 2;
     string units = 3;
 }
 
 message SetSlitWidthRequest {
     string name = 1; 
-    double value = 2;
+    double magnitude = 2;
     string units = 3;
 }
 
 message SetSlitWidthResponse {
     string name = 1; 
-    double value = 2;
+    double magnitude = 2;
     string units = 3;
 }
 
@@ -202,22 +208,7 @@ message GetConnectionDetailsRequest {
 
 message GetConnectionDetailsResponse {
     string name = 1;
-    double value = 2;
+    double magnitude = 2;
     string units = 3;
 }
-
-message SetConnectionDetailsRequest {
-    string name = 1; 
-    double value = 2;
-    string units = 3;
-}
-
-message SetConnectionDetailsResponse {
-    string name = 1; 
-    double value = 2;
-    string units = 3;
-}
-
-
-
 

@@ -78,7 +78,7 @@ message GetDeviceDetailsRequest {
 
 message GetDeviceDetailsResponse {
     string name = 1;
-    string details = 2;
+    map <string, string> details = 2;
 }
 
 

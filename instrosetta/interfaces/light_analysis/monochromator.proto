@@ -2,6 +2,7 @@ syntax = "proto3";
 
 package instrosetta.interfaces.light_analysis.monochromator;
 
+import "instrosetta/common/connection.proto";
 
 service Monochromator {
     rpc Connect(ConnectRequest) returns (ConnectResponse) {}
@@ -11,29 +12,13 @@ service Monochromator {
     rpc GetWavelength(GetWavelengthRequest) returns (GetWavelengthResponse) {}
     rpc SetWavelength(SetWavelengthRequest) returns (SetWavelengthResponse) {}
 
-    rpc GetGratingRange(GetGratingOptionsRequest) returns (GetGratingOptionsResponse) {}
+    rpc GetGratingOptions(GetGratingOptionsRequest) returns (GetGratingOptionsResponse) {}
     rpc GetGrating(GetGratingRequest) returns (GetGratingResponse) {}
     rpc SetGrating(SetGratingRequest) returns (SetGratingResponse) {}
-}
 
-message ConnectRequest {
-    string name = 1; 
-    string serial_number = 2;
-    string serial_port = 3;
-    uint32 baudrate = 4; 
-    float timeout = 6;
-}
-
-message ConnectResponse {
-    string name = 1; 
-}
-
-message DisconnectRequest {
-    string name = 1; 
-}
-
-message DisconnectResponse {
-    string name = 1; 
+    rpc GetSlitWidthRange(GetSlitWidthRangeRequest) returns (GetSlitWidthRangeResponse) {}
+    rpc GetSlitWidth(GetSlitWidthRequest) returns (GetSlitWidthResponse) {}
+    rpc SetSlitWidth(SetSlitWidthRequest) returns (SetSlitWidthResponse) {}
 }
 
 message GetWavelengthRangeRequest {
@@ -53,19 +38,19 @@ message GetWavelengthRequest {
 
 message GetWavelengthResponse {
     string name = 1; 
-    float wavelength = 2;
+    float magnitude = 2;
     string units = 3;
 }
 
 message SetWavelengthRequest {
     string name = 1; 
-    float wavelength = 2;
+    float magnitude = 2;
     string units = 3;
 }
 
 message SetWavelengthResponse {
     string name = 1; 
-    float wavelength = 2;
+    float magnitude = 2;
     string units = 3;
 }
 
@@ -76,7 +61,7 @@ message GetGratingOptionsRequest {
 
 message GetGratingOptionsResponse {
     string name = 1; 
-    repeated uint32 options = 2;
+    repeated uint32 grating_ids = 2;
     
 }
 
@@ -86,16 +71,50 @@ message GetGratingRequest {
 
 message GetGratingResponse {
     string name = 1; 
-    uint32 grating = 2;
+    uint32 grating_id = 2;
 }
 
 message SetGratingRequest {
     string name = 1; 
-    uint32 grating = 2;
+    uint32 grating_id = 2;
 }
 
 message SetGratingResponse {
     string name = 1; 
-    uint32 grating = 2;
+    uint32 grating_id = 2;
+}
+
+
+message GetSlitWidthRangeRequest {
+    string name = 1; 
+}
+
+message GetSlitWidthRangeResponse {
+    string name = 1; 
+    float minimum = 2;
+    float maximum = 3;
+    string units = 4;
+}
+
+message GetSlitWidthRequest {
+    string name = 1; 
+}
+
+message GetSlitWidthResponse {
+    string name = 1; 
+    float magnitude = 2;
+    string units = 3;
+}
+
+message SetSlitWidthRequest {
+    string name = 1; 
+    float magnitude = 2;
+    string units = 3;
+}
+
+message SetSlitWidthResponse {
+    string name = 1; 
+    float magnitude = 2;
+    string units = 3;
 }
 
