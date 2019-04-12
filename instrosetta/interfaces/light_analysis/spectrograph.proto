@@ -27,6 +27,9 @@ service Spectrograph {
     rpc GetSlitWidth(GetSlitWidthRequest) returns (GetSlitWidthResponse) {}
     rpc SetSlitWidth(SetSlitWidthRequest) returns (SetSlitWidthResponse) {}
     
+    rpc GetReadoutMode(GetReadoutModeRequest) returns (GetReadoutModeResponse) {}
+    rpc SetReadoutMode(SetReadoutModeRequest) returns (SetReadoutModeResponse) {}
+
     
 }
 
@@ -212,3 +215,19 @@ message GetConnectionDetailsResponse {
     string units = 3;
 }
 
+
+message GetReadoutModeRequest {
+    string name =1;
+}
+
+message GetReadoutModeResponse {
+    string name =1;
+}
+
+message SetReadoutModeRequest {
+    string name =1;
+}
+
+message SetReadoutModeResponse {
+    string name =1;
+}
