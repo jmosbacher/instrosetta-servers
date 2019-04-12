@@ -1,0 +1,286 @@
+
+/*
+==================================
+      IMPLEMENTED COMMANDS
+==================================
+*IDN? : Self identify.
+CALL ->
+ - EXIT : 
+ - SAVE :
+ - RUN :
+ - CLEARSCREEN :
+
+ - GET ->
+ - EXPOSURE 
+ - WAVELENGTH
+ - SLIT_WIDTH
+ - GRATING
+ - AREA
+
+SET ->
+ - EXPOSURE 
+ - WAVELENGTH
+ - SLIT_WIDTH
+ - GRATING
+ - SHUTTER_MODE
+ - READOUT_MODE
+
+*/
+
+// FUNCTIONS =====================>
+
+function ~ReadInput$()
+	comread(6,text$)
+	comwrite(6,"ACK:"+text$+"\n")
+	ReadInput$ = text$
+return
+
+function ~SendMessage(message$)
+	comwrite(6, message$+TERMINATION$)
+	comread(6, response$)
+	if !strcomp(response$, "ACK:"+message$) then
+		WriteResponse = 0
+	else
+		WriteResponse = -1
+	endif
+return
+
+
+function ~Increment(i)
+	if (i>10) then
+		cls()
+		Increment=0	
+	else
+		Increment=i+1
+	endif
+return
+
+// ===============================<
+
+
+
+
+gosub .initialize
+// MAIN LOOP ======================>
+while(1)
+i = ~Increment(i)
+gosub .handler
+wend
+
+// ===============================<
+
+
+.initialize
+baud(6,38400)
+i=0
+return
+
+// REQUEST HANDLER ===============>
+
+.handler
+routine$ = ~ReadInput$()
+select case 0
+
+case strcomp(routine$, "*IDN?")
+~SendMessage("ANDOR_SOLIS")
+break
+
+case strcomp(routine$,"CALL")
+.call
+break
+
+case strcomp(routine$,"GET")
+.get
+break
+
+case strcomp(routine$,"SET")
+.set
+break
+
+~SendMessage("OK")
+selend
+return
+// ===============================<
+
+// CALL HANDLER ==================>
+.call
+prop$ = ~ReadInput()
+select case 0
+case strcomp(prop$,"RUN") 
+	gosub .run
+
+case strcomp(prop$,"SAVE") 
+	gosub .save
+
+case strcomp(prop$,"EXIT") 
+	gosub .exit
+
+case strcomp(prop$,"CLEARSCREEN") 
+	gosub .clear
+
+case else
+  ~SendMessage("INVALID")
+  print("Not a valid command")
+  break
+selend
+return
+
+.run
+print("Starting aquisition...")
+run()
+print("Done.")
+return
+
+.save
+path$ = ~ReadInput()
+SaveAsciiXY(#0, path$, 2, 1)
+print("Saved ascii file in "+path$)
+return
+
+.exit
+end
+return
+
+.clear
+cls()
+return
+// ===============================<
+
+// GET HANDLER ===================>
+.get
+sub$ = ~ReadInput()
+select case 0
+case strcomp(sub$,"EXPOSURE") 
+	gosub .getExposure
+
+case strcomp(sub$,"SLIT_WIDTH") 
+	gosub .getSlitWidth
+
+case strcomp(sub$,"WAVELENGTH") 
+	gosub .getWavelength
+
+case strcomp(sub$,"GRATING") 
+	gosub .getGrating
+
+case strcomp(sub$,"SHUTTER_MODE") 
+	gosub .getShutterMode
+
+case else
+	~SendMessage("INVALID")
+	print("Not a valid command")
+	break
+selend
+
+return
+
+.getExposure
+	exposure$ = GetExposureTime()
+   	~SendMessage(exposure$)
+return
+
+.getSlitWidth
+	width$ = GetSlit()
+   	~SendMessage(width$)
+return
+
+.getWavelength
+	wl$ = GetWavelength()
+	~SendMessage(wl$)
+	print("Wavelength is set to " + wl$)
+return
+
+.getGrating
+	grating$ = GetGrating()
+	~SendMessage(grating)
+return
+
+.getShutterMode
+return
+
+.getArea
+	start$ = ~ReadInput()
+	end$ = ~ReadInput()
+	start = val(start$)
+	end = val(end$)
+	area$ = carea(#0_sig, start, end)
+	~SendMessage(area$)
+	print("Corrected area equals" + area$)
+return
+
+// ===============================<
+
+// SET HANDLER ===================>
+.set
+sub$ = ~ReadInput()
+select case 0
+case strcomp(sub$,"EXPOSURE") 
+	gosub .setExposure
+
+case strcomp(sub$,"SLIT_WIDTH") 
+	gosub .setSlitWidth
+
+case strcomp(sub$,"WAVELENGTH") 
+	gosub .setWavelength
+
+case strcomp(sub$,"GRATING") 
+	gosub .setGrating
+
+case strcomp(sub$,"SHUTTER_MODE") 
+	gosub .setShutterMode
+
+case strcomp(sub$,"READOUT_MODE") 
+	gosub .setShutterMode
+
+case else
+	~SendMessage("INVALID")
+	print("Not a valid command")
+	break
+selend
+
+return
+
+.setExposure
+	exposure$ = ~ReadInput()	
+   	SetExposureTime(val(exposure$))
+   	ExposureTime$ = GetExposureTime()
+   	print("Exposure time set to " + exposure$)
+	~SendMessage(exposure$)
+return
+
+.setSlitWidth
+	width$ = ReadInput()
+   	SetSlit(val(width$))
+   	width$ = GetSlit()
+   	print("Slit width set to " + width$ )
+   	~SendMessage(width$)
+return
+
+.setWavelength
+	wl$ = ~ReadInput()
+	SetWavelength(val(wl$))
+	wl$ = GetWavelength()
+	print("Wavelength set to " + wl$)
+   	~SendMessage(wl$)
+return
+
+.setGrating
+	grating$ = ~ReadInput()
+	grating =  val(grating$)
+	SetGrating(grating)
+   	grating$ = GetGrating()
+   	print("Grating set to " + grating$) 
+return
+
+.setShutterMode
+	smode$ = ~ReadInput()
+	mode = val(smode$)
+	SetShutter(mode, 1)
+return
+
+.setReadoutMode
+	mode$ = ~ReadInput()
+	mode = val(mode$)
+	SetReadoutMode(mode)
+return
+
+// ===============================<

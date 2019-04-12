@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="15.8" version="15.8" Modules="simple" RootPath="." Language="en" Id="{4597405F-FD29-4B24-B9D5-B155765151C1}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="AppXProductDetailsComponent;AppXDependenciesComponent;AppXAppDetailsComponent;AppXVisualAssetsComponent;AppXCapabilitiesComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent;FixupComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Google.Protobuf.dll" Value="..\packages\Google.Protobuf.3.7.0\lib\net45"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Google.Protobuf.dll_1" Value="..\packages\Google.Protobuf.3.7.0\lib\net45"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Grpc.Core.Api.dll" Value="..\packages\Grpc.Core.Api.1.19.0\lib\net45"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Grpc.Core.Api.dll_1" Value="..\packages\Grpc.Core.Api.1.19.0\lib\net45"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Grpc.Core.dll" Value="..\packages\Grpc.Core.1.19.0\lib\net45"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Grpc.Core.dll_1" Value="..\packages\Grpc.Core.1.19.0\lib\net45"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Grpc.Reflection.dll" Value="..\packages\Grpc.Reflection.1.19.0\lib\net45"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Grpc.Reflection.dll_1" Value="..\packages\Grpc.Reflection.1.19.0\lib\net45"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Instrosetta.dll" Value="..\packages\InstrosettaTest.0.1.2\lib\netstandard2.0"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Instrosetta.dll_1" Value="..\packages\InstrosettaTest.0.1.2\lib\netstandard2.0"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_System.Interactive.Async.dll" Value="..\packages\System.Interactive.Async.3.2.0\lib\net46"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_System.Interactive.Async.dll_1" Value="..\packages\System.Interactive.Async.3.2.0\lib\net46"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_System.ValueTuple.dll" Value="..\packages\System.ValueTuple.4.5.0\lib\net461"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_System.ValueTuple.dll_1" Value="..\packages\System.ValueTuple.4.5.0\lib\net461"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Controls.dll" Value="..\ThorlabsKDC101Server"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Controls.dll_1" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Controls.dll_2" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.DeviceManager.dll" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.DeviceManager.dll_1" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll" Value="..\ThorlabsKDC101Server"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll_1" Value="..\ThorlabsKDC101Server"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll_2" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll_3" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.FTD2xx_Net.dll" Value="..\ThorlabsKDC101Server"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.FTD2xx_Net.dll_1" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.FTD2xx_Net.dll_2" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll" Value="..\ThorlabsKDC101Server"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll_1" Value="..\ThorlabsKDC101Server"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll_2" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll_3" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.KCube.DCServo.dll" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.KCube.DCServo.dll_1" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll" Value="..\ThorlabsKDC101Server"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll_1" Value="..\ThorlabsKDC101Server"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll_2" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll_3" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll" Value="..\ThorlabsKDC101Server"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll_1" Value="..\ThorlabsKDC101Server"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll_2" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll_3" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll" Value="..\ThorlabsKDC101Server"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll_1" Value="..\ThorlabsKDC101Server"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll_2" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll_3" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll" Value="..\ThorlabsKDC101Server"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll_1" Value="..\ThorlabsKDC101Server"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll_2" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll_3" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.WPF.UI.dll" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.WPF.UI.dll_1" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.WPF.dll" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.WPF.dll_1" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ThorlabsKDC101ServerCLI.exe" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ThorlabsKDC101ServerCLI.exe.config" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ThorlabsKDC101ServerGUI.exe" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ThorlabsKDC101ServerGUI.exe.config" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_UnitsNet.dll" Value="..\packages\UnitsNet.4.17.0\lib\net40"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_UnitsNet.dll_1" Value="..\packages\UnitsNet.4.17.0\lib\net40"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Xceed.Wpf.Toolkit.dll" Value="..\ThorlabsDependencies"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ftd2xx.dll" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ftd2xx.dll_1" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_grpc_csharp_ext.x64.dll" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_grpc_csharp_ext.x64.dll_1" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_grpc_csharp_ext.x86.dll" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_grpc_csharp_ext.x86.dll_1" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x64.dylib" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x64.dylib_1" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x64.so" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x64.so_1" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x86.dylib" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x86.dylib_1" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x86.so" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x86.so_1" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Google.Protobuf.dll" Value="Google.Protobuf.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Google.Protobuf.dll_1" Value="Google.Protobuf.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Grpc.Core.Api.dll" Value="Grpc.Core.Api.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Grpc.Core.Api.dll_1" Value="Grpc.Core.Api.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Grpc.Core.dll" Value="Grpc.Core.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Grpc.Core.dll_1" Value="Grpc.Core.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Grpc.Reflection.dll" Value="Grpc.Reflection.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Grpc.Reflection.dll_1" Value="Grpc.Reflection.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Instrosetta.dll" Value="Instrosetta.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Instrosetta.dll_1" Value="Instrosetta.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_System.Interactive.Async.dll" Value="System.Interactive.Async.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_System.Interactive.Async.dll_1" Value="System.Interactive.Async.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_System.ValueTuple.dll" Value="System.ValueTuple.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_System.ValueTuple.dll_1" Value="System.ValueTuple.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Controls.dll" Value="Thorlabs.MotionControl.Controls.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Controls.dll_1" Value="Thorlabs.MotionControl.Controls.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Controls.dll_2" Value="Thorlabs.MotionControl.Controls.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.DeviceManager.dll" Value="Thorlabs.MotionControl.DeviceManager.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.DeviceManager.dll_1" Value="Thorlabs.MotionControl.DeviceManager.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll" Value="Thorlabs.MotionControl.DeviceManagerCLI.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll_1" Value="Thorlabs.MotionControl.DeviceManagerCLI.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll_2" Value="Thorlabs.MotionControl.DeviceManagerCLI.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll_3" Value="Thorlabs.MotionControl.DeviceManagerCLI.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.FTD2xx_Net.dll" Value="Thorlabs.MotionControl.FTD2xx_Net.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.FTD2xx_Net.dll_1" Value="Thorlabs.MotionControl.FTD2xx_Net.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.FTD2xx_Net.dll_2" Value="Thorlabs.MotionControl.FTD2xx_Net.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll" Value="Thorlabs.MotionControl.GenericMotorCLI.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll_1" Value="Thorlabs.MotionControl.GenericMotorCLI.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll_2" Value="Thorlabs.MotionControl.GenericMotorCLI.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll_3" Value="Thorlabs.MotionControl.GenericMotorCLI.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.KCube.DCServo.dll" Value="Thorlabs.MotionControl.KCube.DCServo.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.KCube.DCServo.dll_1" Value="Thorlabs.MotionControl.KCube.DCServo.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll" Value="Thorlabs.MotionControl.KCube.DCServoCLI.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll_1" Value="Thorlabs.MotionControl.KCube.DCServoCLI.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll_2" Value="Thorlabs.MotionControl.KCube.DCServoCLI.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll_3" Value="Thorlabs.MotionControl.KCube.DCServoCLI.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll" Value="Thorlabs.MotionControl.PrivateInternal.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll_1" Value="Thorlabs.MotionControl.PrivateInternal.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll_2" Value="Thorlabs.MotionControl.PrivateInternal.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll_3" Value="Thorlabs.MotionControl.PrivateInternal.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll" Value="Thorlabs.MotionControl.Tools.Common.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll_1" Value="Thorlabs.MotionControl.Tools.Common.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll_2" Value="Thorlabs.MotionControl.Tools.Common.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll_3" Value="Thorlabs.MotionControl.Tools.Common.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll" Value="Thorlabs.MotionControl.Tools.Logging.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll_1" Value="Thorlabs.MotionControl.Tools.Logging.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll_2" Value="Thorlabs.MotionControl.Tools.Logging.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll_3" Value="Thorlabs.MotionControl.Tools.Logging.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.WPF.UI.dll" Value="Thorlabs.MotionControl.Tools.WPF.UI.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.WPF.UI.dll_1" Value="Thorlabs.MotionControl.Tools.WPF.UI.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.WPF.dll" Value="Thorlabs.MotionControl.Tools.WPF.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.WPF.dll_1" Value="Thorlabs.MotionControl.Tools.WPF.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ThorlabsKDC101ServerCLI.exe" Value="ThorlabsKDC101ServerCLI.exe"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ThorlabsKDC101ServerCLI.exe.config" Value="ThorlabsKDC101ServerCLI.exe.config"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ThorlabsKDC101ServerGUI.exe" Value="ThorlabsKDC101ServerGUI.exe"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ThorlabsKDC101ServerGUI.exe.config" Value="ThorlabsKDC101ServerGUI.exe.config"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_UnitsNet.dll" Value="UnitsNet.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_UnitsNet.dll_1" Value="UnitsNet.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Xceed.Wpf.Toolkit.dll" Value="Xceed.Wpf.Toolkit.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ftd2xx.dll" Value="ftd2xx.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ftd2xx.dll_1" Value="ftd2xx.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_grpc_csharp_ext.x64.dll" Value="grpc_csharp_ext.x64.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_grpc_csharp_ext.x64.dll_1" Value="grpc_csharp_ext.x64.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_grpc_csharp_ext.x86.dll" Value="grpc_csharp_ext.x86.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_grpc_csharp_ext.x86.dll_1" Value="grpc_csharp_ext.x86.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_libgrpc_csharp_ext.x64.dylib" Value="libgrpc_csharp_ext.x64.dylib"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_libgrpc_csharp_ext.x64.dylib_1" Value="libgrpc_csharp_ext.x64.dylib"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_libgrpc_csharp_ext.x64.so" Value="libgrpc_csharp_ext.x64.so"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_libgrpc_csharp_ext.x64.so_1" Value="libgrpc_csharp_ext.x64.so"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_libgrpc_csharp_ext.x86.dylib" Value="libgrpc_csharp_ext.x86.dylib"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_libgrpc_csharp_ext.x86.dylib_1" Value="libgrpc_csharp_ext.x86.dylib"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_libgrpc_csharp_ext.x86.so" Value="libgrpc_csharp_ext.x86.so"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_libgrpc_csharp_ext.x86.so_1" Value="libgrpc_csharp_ext.x86.so"/>
+    <ROW Property="AI_RUN_AS_ADMIN" Value="0"/>
+    <ROW Property="ALLUSERS" Value="1" MultiBuildValue="DefaultBuild:2"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="Manufacturer" Value="Instrosetta"/>
+    <ROW Property="ProductCode" Value="1033:{3D04CA84-1BAC-4C33-8CF3-5391CCB53843} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Thorlabs KDC101 Server"/>
+    <ROW Property="ProductVersion" Value="0.1.0" Type="32"/>
+    <ROW Property="REBOOT" MultiBuildValue="DefaultBuild:Suppress"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{E51693F0-F171-4D87-B28A-7FE7261C966C}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="Instrosetta_Dir" Directory_Parent="SHORTCUTDIR" DefaultDir="INSTRO~1|Instrosetta"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="ThorlabsKDC101ServerCLI_Dir" Directory_Parent="APPDIR" DefaultDir="THORLA~1|ThorlabsKDC101ServerCLI"/>
+    <ROW Directory="ThorlabsKDC101ServerGUI_Dir" Directory_Parent="APPDIR" DefaultDir="THORLA~2|ThorlabsKDC101ServerGUI"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="Instrosetta" ComponentId="{3B7637FF-E7EC-4815-A4FF-45B4EC454B37}" Directory_="Instrosetta_Dir" Attributes="0"/>
+    <ROW Component="ProductInformation" ComponentId="{7D0FB600-D4FE-4B49-A935-DB09561C0824}" Directory_="APPDIR" Attributes="260" KeyPath="Version"/>
+    <ROW Component="ThorlabsKDC101ServerCLI_ContentOutput" ComponentId="{585E84A1-0D2C-4B07-BC8F-BE480761997E}" Directory_="ThorlabsKDC101ServerCLI_Dir" Attributes="0" KeyPath="Thorlabs.MotionControl.Controls.dll_1"/>
+    <ROW Component="ThorlabsKDC101ServerCLI_PrimaryOutput" ComponentId="{8327BD0E-7C72-49FE-8228-B294BBB2BE00}" Directory_="ThorlabsKDC101ServerCLI_Dir" Attributes="256" KeyPath="ThorlabsKDC101ServerCLI.exe"/>
+    <ROW Component="ThorlabsKDC101ServerCLI_References" ComponentId="{4DC222EC-F935-434B-BDCE-0475B6F8450C}" Directory_="ThorlabsKDC101ServerCLI_Dir" Attributes="0" KeyPath="Xceed.Wpf.Toolkit.dll"/>
+    <ROW Component="ThorlabsKDC101ServerGUI_ContentOutput" ComponentId="{47F33EED-1F0E-411B-8DB7-EB7820CFCA9D}" Directory_="ThorlabsKDC101ServerGUI_Dir" Attributes="0" KeyPath="Thorlabs.MotionControl.DeviceManagerCLI.dll_3"/>
+    <ROW Component="ThorlabsKDC101ServerGUI_PrimaryOutput" ComponentId="{90C87C62-2C0F-49C3-BA5B-FC1EB3CE6A9C}" Directory_="ThorlabsKDC101ServerGUI_Dir" Attributes="256" KeyPath="ThorlabsKDC101ServerGUI.exe"/>
+    <ROW Component="ThorlabsKDC101ServerGUI_References" ComponentId="{678236D0-B31F-4C58-A14F-2F0048BF2624}" Directory_="ThorlabsKDC101ServerGUI_Dir" Attributes="0" KeyPath="UnitsNet.dll_1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="Instrosetta ProductInformation ThorlabsKDC101ServerCLI_ContentOutput ThorlabsKDC101ServerCLI_PrimaryOutput ThorlabsKDC101ServerCLI_References ThorlabsKDC101ServerGUI_ContentOutput ThorlabsKDC101ServerGUI_PrimaryOutput ThorlabsKDC101ServerGUI_References"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="Google.Protobuf.dll" Component_="ThorlabsKDC101ServerCLI_References" FileName="GOOGLE~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Google.Protobuf.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Google.Protobuf.dll&gt;" SelfReg="false" NextFile="Grpc.Core.Api.dll"/>
+    <ROW File="Google.Protobuf.dll_1" Component_="ThorlabsKDC101ServerGUI_References" FileName="GOOGLE~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Google.Protobuf.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Google.Protobuf.dll_1&gt;" SelfReg="false" NextFile="Grpc.Core.Api.dll_1"/>
+    <ROW File="Grpc.Core.Api.dll" Component_="ThorlabsKDC101ServerCLI_References" FileName="GRPCCO~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Grpc.Core.Api.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Grpc.Core.Api.dll&gt;" SelfReg="false" NextFile="Grpc.Core.dll"/>
+    <ROW File="Grpc.Core.Api.dll_1" Component_="ThorlabsKDC101ServerGUI_References" FileName="GRPCCO~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Grpc.Core.Api.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Grpc.Core.Api.dll_1&gt;" SelfReg="false" NextFile="Grpc.Core.dll_1"/>
+    <ROW File="Grpc.Core.dll" Component_="ThorlabsKDC101ServerCLI_References" FileName="GRPCCO~3.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Grpc.Core.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Grpc.Core.dll&gt;" SelfReg="false" NextFile="Grpc.Reflection.dll"/>
+    <ROW File="Grpc.Core.dll_1" Component_="ThorlabsKDC101ServerGUI_References" FileName="GRPCCO~3.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Grpc.Core.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Grpc.Core.dll_1&gt;" SelfReg="false" NextFile="Grpc.Reflection.dll_1"/>
+    <ROW File="Grpc.Reflection.dll" Component_="ThorlabsKDC101ServerCLI_References" FileName="GRPCRE~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Grpc.Reflection.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Grpc.Reflection.dll&gt;" SelfReg="false" NextFile="Instrosetta.dll"/>
+    <ROW File="Grpc.Reflection.dll_1" Component_="ThorlabsKDC101ServerGUI_References" FileName="GRPCRE~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Grpc.Reflection.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Grpc.Reflection.dll_1&gt;" SelfReg="false" NextFile="Instrosetta.dll_1"/>
+    <ROW File="Instrosetta.dll" Component_="ThorlabsKDC101ServerCLI_References" FileName="INSTRO~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Instrosetta.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Instrosetta.dll&gt;" SelfReg="false" NextFile="System.Interactive.Async.dll"/>
+    <ROW File="Instrosetta.dll_1" Component_="ThorlabsKDC101ServerGUI_References" FileName="INSTRO~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Instrosetta.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Instrosetta.dll_1&gt;" SelfReg="false" NextFile="System.Interactive.Async.dll_1"/>
+    <ROW File="System.Interactive.Async.dll" Component_="ThorlabsKDC101ServerCLI_References" FileName="SYSTEM~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_System.Interactive.Async.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_System.Interactive.Async.dll&gt;" SelfReg="false" NextFile="System.ValueTuple.dll"/>
+    <ROW File="System.Interactive.Async.dll_1" Component_="ThorlabsKDC101ServerGUI_References" FileName="SYSTEM~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_System.Interactive.Async.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_System.Interactive.Async.dll_1&gt;" SelfReg="false" NextFile="System.ValueTuple.dll_1"/>
+    <ROW File="System.ValueTuple.dll" Component_="ThorlabsKDC101ServerCLI_References" FileName="SYSTEM~3.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_System.ValueTuple.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_System.ValueTuple.dll&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.Controls.dll"/>
+    <ROW File="System.ValueTuple.dll_1" Component_="ThorlabsKDC101ServerGUI_References" FileName="SYSTEM~3.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_System.ValueTuple.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_System.ValueTuple.dll_1&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.DeviceManagerCLI.dll_1"/>
+    <ROW File="Thorlabs.MotionControl.Controls.dll" Component_="ThorlabsKDC101ServerCLI_References" FileName="THORLA~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Controls.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Controls.dll&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.DeviceManagerCLI.dll"/>
+    <ROW File="Thorlabs.MotionControl.Controls.dll_1" Component_="ThorlabsKDC101ServerCLI_ContentOutput" FileName="THORLA~1.DLL|Thorlabs.MotionControl.Controls.dll" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Controls.dll_1&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.DeviceManager.dll"/>
+    <ROW File="Thorlabs.MotionControl.Controls.dll_2" Component_="ThorlabsKDC101ServerGUI_ContentOutput" FileName="THORLA~8.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Controls.dll_2]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Controls.dll_2&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.DeviceManager.dll_1"/>
+    <ROW File="Thorlabs.MotionControl.DeviceManager.dll" Component_="ThorlabsKDC101ServerCLI_ContentOutput" FileName="THORL~11.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.DeviceManager.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.DeviceManager.dll&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.DeviceManagerCLI.dll_2"/>
+    <ROW File="Thorlabs.MotionControl.DeviceManager.dll_1" Component_="ThorlabsKDC101ServerGUI_ContentOutput" FileName="THORLA~9.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.DeviceManager.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.DeviceManager.dll_1&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.DeviceManagerCLI.dll_3"/>
+    <ROW File="Thorlabs.MotionControl.DeviceManagerCLI.dll" Component_="ThorlabsKDC101ServerCLI_References" FileName="THORLA~3.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.FTD2xx_Net.dll"/>
+    <ROW File="Thorlabs.MotionControl.DeviceManagerCLI.dll_1" Component_="ThorlabsKDC101ServerGUI_References" FileName="THORLA~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll_1&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.GenericMotorCLI.dll_1"/>
+    <ROW File="Thorlabs.MotionControl.DeviceManagerCLI.dll_2" Component_="ThorlabsKDC101ServerCLI_ContentOutput" FileName="THORL~10.DLL|Thorlabs.MotionControl.DeviceManagerCLI.dll" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll_2&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.FTD2xx_Net.dll_1"/>
+    <ROW File="Thorlabs.MotionControl.DeviceManagerCLI.dll_3" Component_="ThorlabsKDC101ServerGUI_ContentOutput" FileName="THORLA~1.DLL|Thorlabs.MotionControl.DeviceManagerCLI.dll" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll_3&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.FTD2xx_Net.dll_2"/>
+    <ROW File="Thorlabs.MotionControl.FTD2xx_Net.dll" Component_="ThorlabsKDC101ServerCLI_References" FileName="THORLA~4.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.FTD2xx_Net.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.FTD2xx_Net.dll&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.GenericMotorCLI.dll"/>
+    <ROW File="Thorlabs.MotionControl.FTD2xx_Net.dll_1" Component_="ThorlabsKDC101ServerCLI_ContentOutput" FileName="THORL~12.DLL|Thorlabs.MotionControl.FTD2xx_Net.dll" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.FTD2xx_Net.dll_1&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.GenericMotorCLI.dll_2"/>
+    <ROW File="Thorlabs.MotionControl.FTD2xx_Net.dll_2" Component_="ThorlabsKDC101ServerGUI_ContentOutput" FileName="THORL~11.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.FTD2xx_Net.dll_2]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.FTD2xx_Net.dll_2&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.GenericMotorCLI.dll_3"/>
+    <ROW File="Thorlabs.MotionControl.GenericMotorCLI.dll" Component_="ThorlabsKDC101ServerCLI_References" FileName="THORLA~5.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.KCube.DCServoCLI.dll"/>
+    <ROW File="Thorlabs.MotionControl.GenericMotorCLI.dll_1" Component_="ThorlabsKDC101ServerGUI_References" FileName="THORLA~3.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll_1&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.KCube.DCServoCLI.dll_1"/>
+    <ROW File="Thorlabs.MotionControl.GenericMotorCLI.dll_2" Component_="ThorlabsKDC101ServerCLI_ContentOutput" FileName="THORL~13.DLL|Thorlabs.MotionControl.GenericMotorCLI.dll" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll_2&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.KCube.DCServo.dll"/>
+    <ROW File="Thorlabs.MotionControl.GenericMotorCLI.dll_3" Component_="ThorlabsKDC101ServerGUI_ContentOutput" FileName="THORL~10.DLL|Thorlabs.MotionControl.GenericMotorCLI.dll" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll_3&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.KCube.DCServo.dll_1"/>
+    <ROW File="Thorlabs.MotionControl.KCube.DCServo.dll" Component_="ThorlabsKDC101ServerCLI_ContentOutput" FileName="THORL~15.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.KCube.DCServo.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.KCube.DCServo.dll&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.KCube.DCServoCLI.dll_2"/>
+    <ROW File="Thorlabs.MotionControl.KCube.DCServo.dll_1" Component_="ThorlabsKDC101ServerGUI_ContentOutput" FileName="THORL~13.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.KCube.DCServo.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.KCube.DCServo.dll_1&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.KCube.DCServoCLI.dll_3"/>
+    <ROW File="Thorlabs.MotionControl.KCube.DCServoCLI.dll" Component_="ThorlabsKDC101ServerCLI_References" FileName="THORLA~6.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.PrivateInternal.dll"/>
+    <ROW File="Thorlabs.MotionControl.KCube.DCServoCLI.dll_1" Component_="ThorlabsKDC101ServerGUI_References" FileName="THORLA~4.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll_1&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.PrivateInternal.dll_1"/>
+    <ROW File="Thorlabs.MotionControl.KCube.DCServoCLI.dll_2" Component_="ThorlabsKDC101ServerCLI_ContentOutput" FileName="THORL~16.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll_2]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll_2&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.PrivateInternal.dll_2"/>
+    <ROW File="Thorlabs.MotionControl.KCube.DCServoCLI.dll_3" Component_="ThorlabsKDC101ServerGUI_ContentOutput" FileName="THORL~12.DLL|Thorlabs.MotionControl.KCube.DCServoCLI.dll" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll_3&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.PrivateInternal.dll_3"/>
+    <ROW File="Thorlabs.MotionControl.PrivateInternal.dll" Component_="ThorlabsKDC101ServerCLI_References" FileName="THORLA~7.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.Tools.Common.dll"/>
+    <ROW File="Thorlabs.MotionControl.PrivateInternal.dll_1" Component_="ThorlabsKDC101ServerGUI_References" FileName="THORLA~5.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll_1&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.Tools.Common.dll_1"/>
+    <ROW File="Thorlabs.MotionControl.PrivateInternal.dll_2" Component_="ThorlabsKDC101ServerCLI_ContentOutput" FileName="THORL~17.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll_2]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll_2&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.Tools.Common.dll_2"/>
+    <ROW File="Thorlabs.MotionControl.PrivateInternal.dll_3" Component_="ThorlabsKDC101ServerGUI_ContentOutput" FileName="THORL~14.DLL|Thorlabs.MotionControl.PrivateInternal.dll" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll_3&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.Tools.Common.dll_3"/>
+    <ROW File="Thorlabs.MotionControl.Tools.Common.dll" Component_="ThorlabsKDC101ServerCLI_References" FileName="THORLA~8.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.Tools.Logging.dll"/>
+    <ROW File="Thorlabs.MotionControl.Tools.Common.dll_1" Component_="ThorlabsKDC101ServerGUI_References" FileName="THORLA~6.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll_1&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.Tools.Logging.dll_1"/>
+    <ROW File="Thorlabs.MotionControl.Tools.Common.dll_2" Component_="ThorlabsKDC101ServerCLI_ContentOutput" FileName="THORL~18.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll_2]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll_2&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.Tools.Logging.dll_2"/>
+    <ROW File="Thorlabs.MotionControl.Tools.Common.dll_3" Component_="ThorlabsKDC101ServerGUI_ContentOutput" FileName="THORL~15.DLL|Thorlabs.MotionControl.Tools.Common.dll" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll_3&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.Tools.Logging.dll_3"/>
+    <ROW File="Thorlabs.MotionControl.Tools.Logging.dll" Component_="ThorlabsKDC101ServerCLI_References" FileName="THORLA~9.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll&gt;" SelfReg="false" NextFile="UnitsNet.dll"/>
+    <ROW File="Thorlabs.MotionControl.Tools.Logging.dll_1" Component_="ThorlabsKDC101ServerGUI_References" FileName="THORLA~7.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll_1&gt;" SelfReg="false" NextFile="UnitsNet.dll_1"/>
+    <ROW File="Thorlabs.MotionControl.Tools.Logging.dll_2" Component_="ThorlabsKDC101ServerCLI_ContentOutput" FileName="THORL~14.DLL|Thorlabs.MotionControl.Tools.Logging.dll" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll_2&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.Tools.WPF.dll"/>
+    <ROW File="Thorlabs.MotionControl.Tools.Logging.dll_3" Component_="ThorlabsKDC101ServerGUI_ContentOutput" FileName="THORL~16.DLL|Thorlabs.MotionControl.Tools.Logging.dll" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll_3&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.Tools.WPF.dll_1"/>
+    <ROW File="Thorlabs.MotionControl.Tools.WPF.UI.dll" Component_="ThorlabsKDC101ServerCLI_ContentOutput" FileName="THORL~21.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.WPF.UI.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Tools.WPF.UI.dll&gt;" SelfReg="false" NextFile="ThorlabsKDC101ServerGUI.exe"/>
+    <ROW File="Thorlabs.MotionControl.Tools.WPF.UI.dll_1" Component_="ThorlabsKDC101ServerGUI_ContentOutput" FileName="THORL~19.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.WPF.UI.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Tools.WPF.UI.dll_1&gt;" SelfReg="false"/>
+    <ROW File="Thorlabs.MotionControl.Tools.WPF.dll" Component_="ThorlabsKDC101ServerCLI_ContentOutput" FileName="THORL~20.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.WPF.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Tools.WPF.dll&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.Tools.WPF.UI.dll"/>
+    <ROW File="Thorlabs.MotionControl.Tools.WPF.dll_1" Component_="ThorlabsKDC101ServerGUI_ContentOutput" FileName="THORL~18.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.WPF.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Tools.WPF.dll_1&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.Tools.WPF.UI.dll_1"/>
+    <ROW File="ThorlabsKDC101ServerCLI.exe" Component_="ThorlabsKDC101ServerCLI_PrimaryOutput" FileName="THORLA~2.EXE|[|AI_PROPPATH_FILENAME_PERBUILD_ThorlabsKDC101ServerCLI.exe]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ThorlabsKDC101ServerCLI.exe&gt;" SelfReg="false" NextFile="ThorlabsKDC101ServerCLI.exe.config" DigSign="true"/>
+    <ROW File="ThorlabsKDC101ServerCLI.exe.config" Component_="ThorlabsKDC101ServerCLI_PrimaryOutput" FileName="THORLA~2.CON|[|AI_PROPPATH_FILENAME_PERBUILD_ThorlabsKDC101ServerCLI.exe.config]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ThorlabsKDC101ServerCLI.exe.config&gt;" SelfReg="false" NextFile="Google.Protobuf.dll"/>
+    <ROW File="ThorlabsKDC101ServerGUI.exe" Component_="ThorlabsKDC101ServerGUI_PrimaryOutput" FileName="THORLA~2.EXE|[|AI_PROPPATH_FILENAME_PERBUILD_ThorlabsKDC101ServerGUI.exe]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ThorlabsKDC101ServerGUI.exe&gt;" SelfReg="false" NextFile="ThorlabsKDC101ServerGUI.exe.config" DigSign="true"/>
+    <ROW File="ThorlabsKDC101ServerGUI.exe.config" Component_="ThorlabsKDC101ServerGUI_PrimaryOutput" FileName="THORLA~2.CON|[|AI_PROPPATH_FILENAME_PERBUILD_ThorlabsKDC101ServerGUI.exe.config]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ThorlabsKDC101ServerGUI.exe.config&gt;" SelfReg="false" NextFile="Google.Protobuf.dll_1"/>
+    <ROW File="UnitsNet.dll" Component_="ThorlabsKDC101ServerCLI_References" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_UnitsNet.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_UnitsNet.dll&gt;" SelfReg="false" NextFile="Xceed.Wpf.Toolkit.dll"/>
+    <ROW File="UnitsNet.dll_1" Component_="ThorlabsKDC101ServerGUI_References" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_UnitsNet.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_UnitsNet.dll_1&gt;" SelfReg="false" NextFile="grpc_csharp_ext.x86.dll_1"/>
+    <ROW File="Xceed.Wpf.Toolkit.dll" Component_="ThorlabsKDC101ServerCLI_References" FileName="XCEEDW~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Xceed.Wpf.Toolkit.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Xceed.Wpf.Toolkit.dll&gt;" SelfReg="false" NextFile="grpc_csharp_ext.x86.dll"/>
+    <ROW File="ftd2xx.dll" Component_="ThorlabsKDC101ServerCLI_ContentOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_ftd2xx.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ftd2xx.dll&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.Controls.dll_1"/>
+    <ROW File="ftd2xx.dll_1" Component_="ThorlabsKDC101ServerGUI_ContentOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_ftd2xx.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ftd2xx.dll_1&gt;" SelfReg="false" NextFile="Thorlabs.MotionControl.Controls.dll_2"/>
+    <ROW File="grpc_csharp_ext.x64.dll" Component_="ThorlabsKDC101ServerCLI_ContentOutput" FileName="GRPC_C~3.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_grpc_csharp_ext.x64.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_grpc_csharp_ext.x64.dll&gt;" SelfReg="false" NextFile="libgrpc_csharp_ext.x86.so"/>
+    <ROW File="grpc_csharp_ext.x64.dll_1" Component_="ThorlabsKDC101ServerGUI_ContentOutput" FileName="GRPC_C~3.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_grpc_csharp_ext.x64.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_grpc_csharp_ext.x64.dll_1&gt;" SelfReg="false" NextFile="libgrpc_csharp_ext.x86.so_1"/>
+    <ROW File="grpc_csharp_ext.x86.dll" Component_="ThorlabsKDC101ServerCLI_ContentOutput" FileName="GRPC_C~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_grpc_csharp_ext.x86.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_grpc_csharp_ext.x86.dll&gt;" SelfReg="false" NextFile="grpc_csharp_ext.x64.dll"/>
+    <ROW File="grpc_csharp_ext.x86.dll_1" Component_="ThorlabsKDC101ServerGUI_ContentOutput" FileName="GRPC_C~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_grpc_csharp_ext.x86.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_grpc_csharp_ext.x86.dll_1&gt;" SelfReg="false" NextFile="grpc_csharp_ext.x64.dll_1"/>
+    <ROW File="libgrpc_csharp_ext.x64.dylib" Component_="ThorlabsKDC101ServerCLI_ContentOutput" FileName="LIBGRP~3.DYL|[|AI_PROPPATH_FILENAME_PERBUILD_libgrpc_csharp_ext.x64.dylib]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_libgrpc_csharp_ext.x64.dylib&gt;" SelfReg="false" NextFile="ftd2xx.dll"/>
+    <ROW File="libgrpc_csharp_ext.x64.dylib_1" Component_="ThorlabsKDC101ServerGUI_ContentOutput" FileName="LIBGRP~3.DYL|[|AI_PROPPATH_FILENAME_PERBUILD_libgrpc_csharp_ext.x64.dylib_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_libgrpc_csharp_ext.x64.dylib_1&gt;" SelfReg="false" NextFile="ftd2xx.dll_1"/>
+    <ROW File="libgrpc_csharp_ext.x64.so" Component_="ThorlabsKDC101ServerCLI_ContentOutput" FileName="LIBGRP~3.SO|[|AI_PROPPATH_FILENAME_PERBUILD_libgrpc_csharp_ext.x64.so]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_libgrpc_csharp_ext.x64.so&gt;" SelfReg="false" NextFile="libgrpc_csharp_ext.x86.dylib"/>
+    <ROW File="libgrpc_csharp_ext.x64.so_1" Component_="ThorlabsKDC101ServerGUI_ContentOutput" FileName="LIBGRP~3.SO|[|AI_PROPPATH_FILENAME_PERBUILD_libgrpc_csharp_ext.x64.so_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_libgrpc_csharp_ext.x64.so_1&gt;" SelfReg="false" NextFile="libgrpc_csharp_ext.x86.dylib_1"/>
+    <ROW File="libgrpc_csharp_ext.x86.dylib" Component_="ThorlabsKDC101ServerCLI_ContentOutput" FileName="LIBGRP~2.DYL|[|AI_PROPPATH_FILENAME_PERBUILD_libgrpc_csharp_ext.x86.dylib]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_libgrpc_csharp_ext.x86.dylib&gt;" SelfReg="false" NextFile="libgrpc_csharp_ext.x64.dylib"/>
+    <ROW File="libgrpc_csharp_ext.x86.dylib_1" Component_="ThorlabsKDC101ServerGUI_ContentOutput" FileName="LIBGRP~2.DYL|[|AI_PROPPATH_FILENAME_PERBUILD_libgrpc_csharp_ext.x86.dylib_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_libgrpc_csharp_ext.x86.dylib_1&gt;" SelfReg="false" NextFile="libgrpc_csharp_ext.x64.dylib_1"/>
+    <ROW File="libgrpc_csharp_ext.x86.so" Component_="ThorlabsKDC101ServerCLI_ContentOutput" FileName="LIBGRP~2.SO|[|AI_PROPPATH_FILENAME_PERBUILD_libgrpc_csharp_ext.x86.so]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_libgrpc_csharp_ext.x86.so&gt;" SelfReg="false" NextFile="libgrpc_csharp_ext.x64.so"/>
+    <ROW File="libgrpc_csharp_ext.x86.so_1" Component_="ThorlabsKDC101ServerGUI_ContentOutput" FileName="LIBGRP~2.SO|[|AI_PROPPATH_FILENAME_PERBUILD_libgrpc_csharp_ext.x86.so_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_libgrpc_csharp_ext.x86.so_1&gt;" SelfReg="false" NextFile="libgrpc_csharp_ext.x64.so_1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.AppPathsComponent">
+    <ROW Name="AI_APPPATH_PERBUILD_Google.Protobuf.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Google.Protobuf.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Google.Protobuf.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Google.Protobuf.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_Google.Protobuf.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_Google.Protobuf.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Grpc.Core.Api.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Grpc.Core.Api.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Grpc.Core.Api.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Grpc.Core.Api.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_Grpc.Core.Api.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_Grpc.Core.Api.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Grpc.Core.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Grpc.Core.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Grpc.Core.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Grpc.Core.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_Grpc.Core.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_Grpc.Core.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Grpc.Reflection.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Grpc.Reflection.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Grpc.Reflection.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Grpc.Reflection.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_Grpc.Reflection.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_Grpc.Reflection.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Instrosetta.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Instrosetta.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Instrosetta.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Instrosetta.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_Instrosetta.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_Instrosetta.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_System.Interactive.Async.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_System.Interactive.Async.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_System.Interactive.Async.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_System.Interactive.Async.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_System.Interactive.Async.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_System.Interactive.Async.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_System.ValueTuple.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_System.ValueTuple.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_System.ValueTuple.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_System.ValueTuple.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_System.ValueTuple.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_System.ValueTuple.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Controls.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Controls.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Controls.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Controls.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Controls.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Controls.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Controls.dll_2" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Controls.dll_2]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Controls.dll_2]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.DeviceManager.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.DeviceManager.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.DeviceManager.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.DeviceManager.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.DeviceManager.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.DeviceManager.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll_2" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll_2]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll_2]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll_3" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll_3]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll_3]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.FTD2xx_Net.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.FTD2xx_Net.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.FTD2xx_Net.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.FTD2xx_Net.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.FTD2xx_Net.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.FTD2xx_Net.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.FTD2xx_Net.dll_2" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.FTD2xx_Net.dll_2]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.FTD2xx_Net.dll_2]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll_2" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll_2]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll_2]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll_3" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll_3]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll_3]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.KCube.DCServo.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.KCube.DCServo.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.KCube.DCServo.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.KCube.DCServo.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.KCube.DCServo.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.KCube.DCServo.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll_2" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll_2]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll_2]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll_3" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll_3]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll_3]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll_2" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll_2]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll_2]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll_3" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll_3]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll_3]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll_2" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll_2]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll_2]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll_3" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll_3]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll_3]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll_2" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll_2]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll_2]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll_3" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll_3]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll_3]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Tools.WPF.UI.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.WPF.UI.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.WPF.UI.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Tools.WPF.UI.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.WPF.UI.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.WPF.UI.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Tools.WPF.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.WPF.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.WPF.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Thorlabs.MotionControl.Tools.WPF.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.WPF.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_Thorlabs.MotionControl.Tools.WPF.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ThorlabsKDC101ServerCLI.exe" Path="[|AI_PROPPATH_DIR_PERBUILD_ThorlabsKDC101ServerCLI.exe]\[|AI_PROPPATH_FILENAME_PERBUILD_ThorlabsKDC101ServerCLI.exe]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ThorlabsKDC101ServerCLI.exe.config" Path="[|AI_PROPPATH_DIR_PERBUILD_ThorlabsKDC101ServerCLI.exe.config]\[|AI_PROPPATH_FILENAME_PERBUILD_ThorlabsKDC101ServerCLI.exe.config]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ThorlabsKDC101ServerGUI.exe" Path="[|AI_PROPPATH_DIR_PERBUILD_ThorlabsKDC101ServerGUI.exe]\[|AI_PROPPATH_FILENAME_PERBUILD_ThorlabsKDC101ServerGUI.exe]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ThorlabsKDC101ServerGUI.exe.config" Path="[|AI_PROPPATH_DIR_PERBUILD_ThorlabsKDC101ServerGUI.exe.config]\[|AI_PROPPATH_FILENAME_PERBUILD_ThorlabsKDC101ServerGUI.exe.config]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_UnitsNet.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_UnitsNet.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_UnitsNet.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_UnitsNet.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_UnitsNet.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_UnitsNet.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Xceed.Wpf.Toolkit.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Xceed.Wpf.Toolkit.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Xceed.Wpf.Toolkit.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ftd2xx.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_ftd2xx.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_ftd2xx.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ftd2xx.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_ftd2xx.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_ftd2xx.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_grpc_csharp_ext.x64.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_grpc_csharp_ext.x64.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_grpc_csharp_ext.x64.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_grpc_csharp_ext.x64.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_grpc_csharp_ext.x64.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_grpc_csharp_ext.x64.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_grpc_csharp_ext.x86.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_grpc_csharp_ext.x86.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_grpc_csharp_ext.x86.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_grpc_csharp_ext.x86.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_grpc_csharp_ext.x86.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_grpc_csharp_ext.x86.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_libgrpc_csharp_ext.x64.dylib" Path="[|AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x64.dylib]\[|AI_PROPPATH_FILENAME_PERBUILD_libgrpc_csharp_ext.x64.dylib]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_libgrpc_csharp_ext.x64.dylib_1" Path="[|AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x64.dylib_1]\[|AI_PROPPATH_FILENAME_PERBUILD_libgrpc_csharp_ext.x64.dylib_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_libgrpc_csharp_ext.x64.so" Path="[|AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x64.so]\[|AI_PROPPATH_FILENAME_PERBUILD_libgrpc_csharp_ext.x64.so]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_libgrpc_csharp_ext.x64.so_1" Path="[|AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x64.so_1]\[|AI_PROPPATH_FILENAME_PERBUILD_libgrpc_csharp_ext.x64.so_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_libgrpc_csharp_ext.x86.dylib" Path="[|AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x86.dylib]\[|AI_PROPPATH_FILENAME_PERBUILD_libgrpc_csharp_ext.x86.dylib]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_libgrpc_csharp_ext.x86.dylib_1" Path="[|AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x86.dylib_1]\[|AI_PROPPATH_FILENAME_PERBUILD_libgrpc_csharp_ext.x86.dylib_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_libgrpc_csharp_ext.x86.so" Path="[|AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x86.so]\[|AI_PROPPATH_FILENAME_PERBUILD_libgrpc_csharp_ext.x86.so]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_libgrpc_csharp_ext.x86.so_1" Path="[|AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x86.so_1]\[|AI_PROPPATH_FILENAME_PERBUILD_libgrpc_csharp_ext.x86.so_1]" Type="2" Content="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFileName="ThorlabsKDC101ServerInstaller" Languages="en" InstallationType="4" UseLargeSchema="true" MsiPackageType="x64"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="Instrosetta_Dir" Component_="Instrosetta" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SETMIXINSTLOCATION" Type="1" Source="aicustact.dll" Target="MixedAllUsersInstallLocation"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[ProgramFiles64Folder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_SETMIXINSTLOCATION" Sequence="748"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_SETMIXINSTLOCATION" Sequence="748"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT64 OR ((VersionNT &lt;&gt; 501) OR (ServicePackLevel = 3))) AND ((VersionNT &lt;&gt; 502) OR (ServicePackLevel = 2))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="ThorlabsKDC101ServerCLI" Directory_="Instrosetta_Dir" Name="THORLA~1|ThorlabsKDC101ServerCLI" Component_="ThorlabsKDC101ServerCLI_PrimaryOutput" Target="[#ThorlabsKDC101ServerCLI.exe]" Hotkey="0" IconIndex="0" ShowCmd="1"/>
+    <ROW Shortcut="ThorlabsKDC101ServerGUI" Directory_="Instrosetta_Dir" Name="THORLA~2|ThorlabsKDC101ServerGUI" Component_="ThorlabsKDC101ServerGUI_PrimaryOutput" Target="[#ThorlabsKDC101ServerGUI.exe]" Hotkey="0" IconIndex="0" ShowCmd="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.VsProjectComponent">
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="PrimaryOutput" OutputFile="ThorlabsKDC101ServerCLI.exe" OutputFileShortcut="ThorlabsKDC101ServerCLI"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="PrimaryOutput" OutputFile="ThorlabsKDC101ServerCLI.exe.config"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="References" OutputFile="Google.Protobuf.dll"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="References" OutputFile="Grpc.Core.Api.dll"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="References" OutputFile="Grpc.Core.dll"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="References" OutputFile="Grpc.Reflection.dll"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="References" OutputFile="Instrosetta.dll"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="References" OutputFile="System.Interactive.Async.dll"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="References" OutputFile="System.ValueTuple.dll"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="References" OutputFile="Thorlabs.MotionControl.Controls.dll"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="References" OutputFile="Thorlabs.MotionControl.DeviceManagerCLI.dll"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="References" OutputFile="Thorlabs.MotionControl.FTD2xx_Net.dll"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="References" OutputFile="Thorlabs.MotionControl.GenericMotorCLI.dll"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="References" OutputFile="Thorlabs.MotionControl.KCube.DCServoCLI.dll"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="References" OutputFile="Thorlabs.MotionControl.PrivateInternal.dll"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="References" OutputFile="Thorlabs.MotionControl.Tools.Common.dll"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="References" OutputFile="Thorlabs.MotionControl.Tools.Logging.dll"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="References" OutputFile="UnitsNet.dll"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="References" OutputFile="Xceed.Wpf.Toolkit.dll"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="ContentOutput" OutputFile="grpc_csharp_ext.x86.dll"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="ContentOutput" OutputFile="grpc_csharp_ext.x64.dll"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="ContentOutput" OutputFile="libgrpc_csharp_ext.x86.so"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="ContentOutput" OutputFile="libgrpc_csharp_ext.x64.so"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="ContentOutput" OutputFile="libgrpc_csharp_ext.x86.dylib"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="ContentOutput" OutputFile="libgrpc_csharp_ext.x64.dylib"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="ContentOutput" OutputFile="ftd2xx.dll"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="ContentOutput" OutputFile="Thorlabs.MotionControl.Controls.dll_1"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="ContentOutput" OutputFile="Thorlabs.MotionControl.DeviceManager.dll"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="ContentOutput" OutputFile="Thorlabs.MotionControl.DeviceManagerCLI.dll_2"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="ContentOutput" OutputFile="Thorlabs.MotionControl.FTD2xx_Net.dll_1"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="ContentOutput" OutputFile="Thorlabs.MotionControl.GenericMotorCLI.dll_2"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="ContentOutput" OutputFile="Thorlabs.MotionControl.KCube.DCServo.dll"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="ContentOutput" OutputFile="Thorlabs.MotionControl.KCube.DCServoCLI.dll_2"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="ContentOutput" OutputFile="Thorlabs.MotionControl.PrivateInternal.dll_2"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="ContentOutput" OutputFile="Thorlabs.MotionControl.Tools.Common.dll_2"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="ContentOutput" OutputFile="Thorlabs.MotionControl.Tools.Logging.dll_2"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="ContentOutput" OutputFile="Thorlabs.MotionControl.Tools.WPF.dll"/>
+    <ROW ProjectId="{7481cf03-f6e3-4b2c-a8c5-58a37d8106fc}" ProjectName="ThorlabsKDC101ServerCLI" OutputGroup="ContentOutput" OutputFile="Thorlabs.MotionControl.Tools.WPF.UI.dll"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="PrimaryOutput" OutputFile="ThorlabsKDC101ServerGUI.exe" OutputFileShortcut="ThorlabsKDC101ServerGUI"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="PrimaryOutput" OutputFile="ThorlabsKDC101ServerGUI.exe.config"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="References" OutputFile="Google.Protobuf.dll_1"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="References" OutputFile="Grpc.Core.Api.dll_1"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="References" OutputFile="Grpc.Core.dll_1"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="References" OutputFile="Grpc.Reflection.dll_1"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="References" OutputFile="Instrosetta.dll_1"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="References" OutputFile="System.Interactive.Async.dll_1"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="References" OutputFile="System.ValueTuple.dll_1"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="References" OutputFile="Thorlabs.MotionControl.DeviceManagerCLI.dll_1"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="References" OutputFile="Thorlabs.MotionControl.GenericMotorCLI.dll_1"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="References" OutputFile="Thorlabs.MotionControl.KCube.DCServoCLI.dll_1"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="References" OutputFile="Thorlabs.MotionControl.PrivateInternal.dll_1"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="References" OutputFile="Thorlabs.MotionControl.Tools.Common.dll_1"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="References" OutputFile="Thorlabs.MotionControl.Tools.Logging.dll_1"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="References" OutputFile="UnitsNet.dll_1"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="ContentOutput" OutputFile="grpc_csharp_ext.x86.dll_1"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="ContentOutput" OutputFile="grpc_csharp_ext.x64.dll_1"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="ContentOutput" OutputFile="libgrpc_csharp_ext.x86.so_1"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="ContentOutput" OutputFile="libgrpc_csharp_ext.x64.so_1"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="ContentOutput" OutputFile="libgrpc_csharp_ext.x86.dylib_1"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="ContentOutput" OutputFile="libgrpc_csharp_ext.x64.dylib_1"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="ContentOutput" OutputFile="ftd2xx.dll_1"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="ContentOutput" OutputFile="Thorlabs.MotionControl.Controls.dll_2"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="ContentOutput" OutputFile="Thorlabs.MotionControl.DeviceManager.dll_1"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="ContentOutput" OutputFile="Thorlabs.MotionControl.DeviceManagerCLI.dll_3"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="ContentOutput" OutputFile="Thorlabs.MotionControl.FTD2xx_Net.dll_2"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="ContentOutput" OutputFile="Thorlabs.MotionControl.GenericMotorCLI.dll_3"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="ContentOutput" OutputFile="Thorlabs.MotionControl.KCube.DCServo.dll_1"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="ContentOutput" OutputFile="Thorlabs.MotionControl.KCube.DCServoCLI.dll_3"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="ContentOutput" OutputFile="Thorlabs.MotionControl.PrivateInternal.dll_3"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="ContentOutput" OutputFile="Thorlabs.MotionControl.Tools.Common.dll_3"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="ContentOutput" OutputFile="Thorlabs.MotionControl.Tools.Logging.dll_3"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="ContentOutput" OutputFile="Thorlabs.MotionControl.Tools.WPF.dll_1"/>
+    <ROW ProjectId="{05968cf9-e99e-4f2f-8d55-0c9fffd34459}" ProjectName="ThorlabsKDC101ServerGUI" OutputGroup="ContentOutput" OutputFile="Thorlabs.MotionControl.Tools.WPF.UI.dll_1"/>
+  </COMPONENT>
+</DOCUMENT>
