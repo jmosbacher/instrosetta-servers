@@ -20,64 +20,64 @@
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_System.ValueTuple.dll" Value="..\packages\System.ValueTuple.4.5.0\lib\net461"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_System.ValueTuple.dll_1" Value="..\packages\System.ValueTuple.4.5.0\lib\net461"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Controls.dll" Value="..\ThorlabsKDC101Server"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Controls.dll_1" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Controls.dll_2" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.DeviceManager.dll" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.DeviceManager.dll_1" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Controls.dll_1" Value="..\ThorlabsKDC101ServerCLI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Controls.dll_2" Value="..\ThorlabsKDC101ServerGUI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.DeviceManager.dll" Value="..\ThorlabsKDC101ServerCLI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.DeviceManager.dll_1" Value="..\ThorlabsKDC101ServerGUI\bin\Debug"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll" Value="..\ThorlabsKDC101Server"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll_1" Value="..\ThorlabsKDC101Server"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll_2" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll_3" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll_2" Value="..\ThorlabsKDC101ServerCLI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.DeviceManagerCLI.dll_3" Value="..\ThorlabsKDC101ServerGUI\bin\Debug"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.FTD2xx_Net.dll" Value="..\ThorlabsKDC101Server"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.FTD2xx_Net.dll_1" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.FTD2xx_Net.dll_2" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.FTD2xx_Net.dll_1" Value="..\ThorlabsKDC101ServerCLI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.FTD2xx_Net.dll_2" Value="..\ThorlabsKDC101ServerGUI\bin\Debug"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll" Value="..\ThorlabsKDC101Server"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll_1" Value="..\ThorlabsKDC101Server"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll_2" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll_3" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.KCube.DCServo.dll" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.KCube.DCServo.dll_1" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll_2" Value="..\ThorlabsKDC101ServerCLI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.GenericMotorCLI.dll_3" Value="..\ThorlabsKDC101ServerGUI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.KCube.DCServo.dll" Value="..\ThorlabsKDC101ServerCLI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.KCube.DCServo.dll_1" Value="..\ThorlabsKDC101ServerGUI\bin\Debug"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll" Value="..\ThorlabsKDC101Server"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll_1" Value="..\ThorlabsKDC101Server"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll_2" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll_3" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll_2" Value="..\ThorlabsKDC101ServerCLI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.KCube.DCServoCLI.dll_3" Value="..\ThorlabsKDC101ServerGUI\bin\Debug"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll" Value="..\ThorlabsKDC101Server"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll_1" Value="..\ThorlabsKDC101Server"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll_2" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll_3" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll_2" Value="..\ThorlabsKDC101ServerCLI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.PrivateInternal.dll_3" Value="..\ThorlabsKDC101ServerGUI\bin\Debug"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll" Value="..\ThorlabsKDC101Server"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll_1" Value="..\ThorlabsKDC101Server"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll_2" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll_3" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll_2" Value="..\ThorlabsKDC101ServerCLI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Common.dll_3" Value="..\ThorlabsKDC101ServerGUI\bin\Debug"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll" Value="..\ThorlabsKDC101Server"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll_1" Value="..\ThorlabsKDC101Server"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll_2" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll_3" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.WPF.UI.dll" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.WPF.UI.dll_1" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.WPF.dll" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.WPF.dll_1" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ThorlabsKDC101ServerCLI.exe" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ThorlabsKDC101ServerCLI.exe.config" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ThorlabsKDC101ServerGUI.exe" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ThorlabsKDC101ServerGUI.exe.config" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll_2" Value="..\ThorlabsKDC101ServerCLI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.Logging.dll_3" Value="..\ThorlabsKDC101ServerGUI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.WPF.UI.dll" Value="..\ThorlabsKDC101ServerCLI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.WPF.UI.dll_1" Value="..\ThorlabsKDC101ServerGUI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.WPF.dll" Value="..\ThorlabsKDC101ServerCLI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Thorlabs.MotionControl.Tools.WPF.dll_1" Value="..\ThorlabsKDC101ServerGUI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ThorlabsKDC101ServerCLI.exe" Value="..\ThorlabsKDC101ServerCLI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ThorlabsKDC101ServerCLI.exe.config" Value="..\ThorlabsKDC101ServerCLI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ThorlabsKDC101ServerGUI.exe" Value="..\ThorlabsKDC101ServerGUI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ThorlabsKDC101ServerGUI.exe.config" Value="..\ThorlabsKDC101ServerGUI\bin\Debug"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_UnitsNet.dll" Value="..\packages\UnitsNet.4.17.0\lib\net40"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_UnitsNet.dll_1" Value="..\packages\UnitsNet.4.17.0\lib\net40"/>
     <ROW Property="AI_PROPPATH_DIR_PERBUILD_Xceed.Wpf.Toolkit.dll" Value="..\ThorlabsDependencies"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ftd2xx.dll" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ftd2xx.dll_1" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_grpc_csharp_ext.x64.dll" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_grpc_csharp_ext.x64.dll_1" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_grpc_csharp_ext.x86.dll" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_grpc_csharp_ext.x86.dll_1" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x64.dylib" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x64.dylib_1" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x64.so" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x64.so_1" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x86.dylib" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x86.dylib_1" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x86.so" Value="..\ThorlabsKDC101ServerCLI\bin\Release"/>
-    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x86.so_1" Value="..\ThorlabsKDC101ServerGUI\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ftd2xx.dll" Value="..\ThorlabsKDC101ServerCLI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ftd2xx.dll_1" Value="..\ThorlabsKDC101ServerGUI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_grpc_csharp_ext.x64.dll" Value="..\ThorlabsKDC101ServerCLI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_grpc_csharp_ext.x64.dll_1" Value="..\ThorlabsKDC101ServerGUI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_grpc_csharp_ext.x86.dll" Value="..\ThorlabsKDC101ServerCLI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_grpc_csharp_ext.x86.dll_1" Value="..\ThorlabsKDC101ServerGUI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x64.dylib" Value="..\ThorlabsKDC101ServerCLI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x64.dylib_1" Value="..\ThorlabsKDC101ServerGUI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x64.so" Value="..\ThorlabsKDC101ServerCLI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x64.so_1" Value="..\ThorlabsKDC101ServerGUI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x86.dylib" Value="..\ThorlabsKDC101ServerCLI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x86.dylib_1" Value="..\ThorlabsKDC101ServerGUI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x86.so" Value="..\ThorlabsKDC101ServerCLI\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libgrpc_csharp_ext.x86.so_1" Value="..\ThorlabsKDC101ServerGUI\bin\Debug"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Google.Protobuf.dll" Value="Google.Protobuf.dll"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Google.Protobuf.dll_1" Value="Google.Protobuf.dll"/>
     <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Grpc.Core.Api.dll" Value="Grpc.Core.Api.dll"/>

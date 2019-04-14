@@ -37,8 +37,8 @@ namespace ThorlabsKDC101Server
             }
         }
 
-    
-        
+
+
 
         public override async Task ScanDevices(ScanDevicesRequest request, IServerStreamWriter<ScanDevicesResponse> responseStream, ServerCallContext context)
         {
@@ -85,13 +85,13 @@ namespace ThorlabsKDC101Server
 
         }
 
-        public override Task<ConnectResponse> Connect(ConnectRequest request, ServerCallContext context)
+        public override Task<Instrosetta.Interfaces.MotionControl.Singleaxis.V1.InitializeResponse> Initialize(Instrosetta.Interfaces.MotionControl.Singleaxis.V1.InitializeRequest request, ServerCallContext context)
         {
             if (_Motor != null)
             {
                 if (_Motor.SerialNo == request.DeviceId)
                 {
-                    return Task.FromResult(new ConnectResponse{ Connected = true});
+                    return Task.FromResult(new Instrosetta.Interfaces.MotionControl.Singleaxis.V1.InitializeResponse { Success = true });
                 }
                 else
                 {
@@ -115,7 +115,7 @@ namespace ThorlabsKDC101Server
             }
 
             int timeout = (int)(request.Timeout * 1000); //UnitConverter.ConvertByAbbreviation(request.Timeout, "Time", "s", "ms");
-            int interval = 100; //(int)(request.PollingInterval * 1000); //UnitConverter.ConvertByAbbreviation(request.PollingInterval, "Time", "s", "ms");
+            int interval = (int)(request.PollingInterval * 1000); //UnitConverter.ConvertByAbbreviation(request.PollingInterval, "Time", "s", "ms");
             try
             {
                 _Motor.Connect(request.DeviceId, timeout, interval);
@@ -131,13 +131,13 @@ namespace ThorlabsKDC101Server
                 throw new RpcException(stat, meta);
             }
 
-            return Task.FromResult(new ConnectResponse { Connected = true });
+            return Task.FromResult(new Instrosetta.Interfaces.MotionControl.Singleaxis.V1.InitializeResponse { Success = true });
 
         }
 
         public bool OnExit()
         {
-            
+
 
             if (_Motor == null || !_Motor.Connected)
             {
@@ -156,19 +156,19 @@ namespace ThorlabsKDC101Server
 
         }
 
-        public Task<DisconnectResponse> Disconnect(DisconnectRequest request, ServerCallContext context)
+        public Task<ShutdownResponse> Shutdown(ShutdownRequest request, ServerCallContext context)
         {
             if (_Motor == null || !_Motor.Connected)
             {
-                return Task.FromResult(new DisconnectResponse { Disconnected = true });
+                return Task.FromResult(new ShutdownResponse { Success = true });
             }
 
             try
             {
-                
+
                 _Motor.Disconnect();
                 SimulationManager.Instance.UninitializeSimulations();
-                return Task.FromResult(new DisconnectResponse { Disconnected = true });
+                return Task.FromResult(new ShutdownResponse { Success = true });
             }
             catch (Exception ex)
             {
