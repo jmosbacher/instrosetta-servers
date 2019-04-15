@@ -25,9 +25,12 @@ SET ->
  - SHUTTER_MODE
  - READOUT_MODE
 
-*/
 
-// FUNCTIONS =====================>
+
+==================================
+             FUNCTIONS
+==================================
+*/
 
 function ~ReadInput$()
 	comread(6,text$)
@@ -55,24 +58,52 @@ function ~Increment(i)
 	endif
 return
 
-// ===============================<
 
-
-
+/*
+==================================
+            INITIALIZE
+==================================
+*/
 
 gosub .initialize
-// MAIN LOOP ======================>
+
+
+/*
+==================================
+            MAIN LOOP
+==================================
+*/
+
 while(1)
 i = ~Increment(i)
 gosub .handler
 wend
 
-// ===============================<
+==================================
+            SHUTDOWN
+==================================
+*/
 
+
+gosub .initialize
+
+.shutdown
+
+
+
+
+/*
+==================================
+            SUB ROUTINES
+==================================
+*/
 
 .initialize
 baud(6,38400)
 i=0
+return
+
+.shutdown
 return
 
 // REQUEST HANDLER ===============>
@@ -100,7 +131,7 @@ break
 ~SendMessage("OK")
 selend
 return
-// ===============================<
+
 
 // CALL HANDLER ==================>
 .call
@@ -144,7 +175,7 @@ return
 .clear
 cls()
 return
-// ===============================<
+
 
 // GET HANDLER ===================>
 .get
@@ -283,4 +314,3 @@ return
 	SetReadoutMode(mode)
 return
 
-// ===============================<
