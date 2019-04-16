@@ -8,7 +8,7 @@ from instrosetta.utils.devices import test_connection
 logger = logging.getLogger(__name__)
 
 
-class FW102C:
+class FW102cDevice:
     device_props = ['speed', 'sensors', 'position']
     mappings = {'position':'pos'}
 
