@@ -5,8 +5,7 @@ import serial
 from enum import Enum
 import time
 import logging
-import ftd2xx
-import ftd2xx.defines as constants
+
 from instrosetta.utils.devices import test_connection
 
 logger = logging.getLogger(__name__)
@@ -24,7 +23,7 @@ class Status(Enum):
     moving_up = b'*\x04\x06\x00\x81P\x01\x00\x13\x00\x00\x90'
     query = b"\x29\x04\x00\x00\x21\x01"
     
-class MFF101:
+class MFF101Device:
     device_props = ['position', 'info']
 
     def __init__(self, *args, **kwargs):
@@ -63,19 +62,29 @@ class MFF101:
         return dict(self._motor.getDeviceInfo())
 
     def connect(self, port):
-        motor = ftd2xx.openEx(port)
-        motor.setBaudRate(115200)
-        motor.setDataCharacteristics(constants.BITS_8, constants.STOP_BITS_1, constants.PARITY_NONE)
-        time.sleep(.05)
-        motor.purge()
-        time.sleep(.05)
-        motor.resetDevice()
-        motor.setFlowControl(constants.FLOW_RTS_CTS, 0, 0)
-        motor.setRts()
-        self._motor = motor
+        try:
+            import ftd2xx
+            import ftd2xx.defines as constants
+            motor = ftd2xx.openEx(port)
+            motor.setBaudRate(115200)
+            motor.setDataCharacteristics(constants.BITS_8, constants.STOP_BITS_1, constants.PARITY_NONE)
+            time.sleep(.05)
+            motor.purge()
+            time.sleep(.05)
+            motor.resetDevice()
+            motor.setFlowControl(constants.FLOW_RTS_CTS, 0, 0)
+            motor.setRts()
+            self._motor = motor
+            return True
+        except Exception as e:
+            return False
 
     def disconnect(self):
         if self._motor is None:
             return 
-        self._motor.close()
+        try:
+            self._motor.close()
+        except Exception as e:
+            return False
         self._motor = None
+        return True
