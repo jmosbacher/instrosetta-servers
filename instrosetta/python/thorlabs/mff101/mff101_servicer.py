@@ -35,3 +35,34 @@ class MFF101Servicer(filter_flipper_pb2_grpc.FilterFlipperServicer):
             context.set_code(grpc.StatusCode.INTERNAL)
             context.set_details('Failed to connect.')
             return filter_flipper_pb2.ShutdownResponse(success=False)
+
+    def GetPosition(self, request, context):
+        resp = filter_flipper_pb2.GetPositionResponse()
+        try:
+            resp.value = filter_flipper_pb2.FlipperPosition[self.device.position]
+        except:
+            context.set_code(grpc.StatusCode.INTERNAL)
+            context.set_details('Failed to get position from device.')
+        return resp
+
+    def GetInfo(self, request, context):
+        resp = filter_flipper_pb2.GetInfoResponse()
+        try:
+            resp.value = self.device.info
+        except:
+            context.set_code(grpc.StatusCode.INTERNAL)
+            context.set_details('Failed to get position from device.')
+        return resp
+
+    def SetPosition(self, request, context):
+        resp = filter_flipper_pb2.SetPositionResponse()
+        try:
+            self.device.sensors = request.value
+            if request.validate:
+                resp.value = self.device.sensors
+            else:
+                resp.value = request.value
+        except:
+            context.set_code(grpc.StatusCode.INTERNAL)
+            context.set_details('Failed to set position.')
+        return resp

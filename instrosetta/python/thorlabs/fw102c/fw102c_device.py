@@ -11,7 +11,10 @@ logger = logging.getLogger(__name__)
 class FW102cDevice:
     device_props = ['speed', 'sensors', 'position']
     mappings = {'position':'pos'}
-
+    position_options = list(range(6))
+    speed_options = {0: 'slow', 1: 'fast'}
+    sensors_options = {0: 'off during standby', 1: 'alwys on'}
+    
     regerr = re.compile("Command error.*")
     __doc__ = """
        Class to control the ThorLabs FW102C filter wheel
@@ -33,7 +36,7 @@ class FW102cDevice:
         self._ser = None
         self._sio = None
         self._status = {}
-        self._filter_map = kwargs.get('filter_map', {})
+        self.filter_options = kwargs.get('filter_map', {x:'' for x in self.position_options})
     
     def help(self):
         print(self.__doc__)
@@ -100,9 +103,12 @@ class FW102cDevice:
         return val
 
     def set_prop(self, prop, val):
+        options = list(getattr(self, prop+"_options").keys())
+        if val not in options:
+            raise ValueError(f"Invalid value. valid values are: {options}")
         name = self.mappings.get(prop, prop)
         self.write("{}={}".format(name, val))
-        val = getattr(self, prop)
+
 
     @property
     def info(self):        
@@ -111,13 +117,16 @@ class FW102cDevice:
     @property
     def filter(self):
         pos = self.position
-        return self._filter_map.get(pos, None)
+        return self.filter_options.get(pos, None)
 
     @filter.setter
     def filter(self, value):
-        for pos, filter in self._filter_map.items():
+        for pos, filter in self.filter_options.items():
             if filter == value:
                 self.positon = pos
+                break
+        else:
+            raise ValueError(f"Invalid value. valid values are: {list(self.filter_options.keys())}")
 
     def __setattr__(self, name, value):
         if name in self.device_props:
@@ -130,7 +139,6 @@ class FW102cDevice:
         if name in self.device_props:
             val = self.get_prop(name) 
             return val
-
         else:
             return super().__getattribute__(name)
 

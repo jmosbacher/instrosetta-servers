@@ -17,10 +17,11 @@ class Position(Enum):
     UNKNOWN = unknown = b''
 
 class Status(Enum):
-    down = b'*\x04\x06\x00\x81P\x01\x00\x02\x00\x00\x90'
-    up = b'*\x04\x06\x00\x81P\x01\x00\x01\x00\x00\x90'
-    moving_down = b'*\x04\x06\x00\x81P\x01\x00\x10\x00\x00\x90'
-    moving_up = b'*\x04\x06\x00\x81P\x01\x00\x13\x00\x00\x90'
+    UNKNOWN = b''
+    DOWN = down = b'*\x04\x06\x00\x81P\x01\x00\x02\x00\x00\x90'
+    UP = up = b'*\x04\x06\x00\x81P\x01\x00\x01\x00\x00\x90'
+    MOVING_DOWN = moving_down = b'*\x04\x06\x00\x81P\x01\x00\x10\x00\x00\x90'
+    MOVING_UP = moving_up = b'*\x04\x06\x00\x81P\x01\x00\x13\x00\x00\x90'
     query = b"\x29\x04\x00\x00\x21\x01"
     
 class MFF101Device:
@@ -59,7 +60,8 @@ class MFF101Device:
 
     @property
     def info(self):
-        return dict(self._motor.getDeviceInfo())
+        info = {k: str(v) for k, v in self._motor.getDeviceInfo().items()}
+        return info
 
     def connect(self, port):
         try:
