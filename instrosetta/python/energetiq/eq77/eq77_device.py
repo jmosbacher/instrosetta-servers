@@ -43,7 +43,7 @@ class EQ77Device:
         try:
             self.conn = RS485(serial_port, baudrate=9600, timeout=timeout)
         except:
-            return f'Could not connect to port {self._port}.'
+            return f'Could not connect to port {serial_port}.'
 
     @property
     def connected(self):
@@ -54,18 +54,4 @@ class EQ77Device:
     def disconnect(self):
         if self.connected:
             self.conn.close()
-
-    @property
-    def port(self):
-        return self._port
-
-    @port.setter
-    def port(self, value):
-        self._port = value
-        if self.connected:
-            self.disconnect()
-        try:
-            self.connect()
-        except:
-            pass
 
