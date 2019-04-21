@@ -14,6 +14,9 @@ class MFF101Servicer(filter_flipper_pb2_grpc.FilterFlipperServicer):
         super().__init__(*args, **kwargs)
         self.device = mff101_device.MFF101Device(*args, **kwargs)
 
+    def bind(self, server):
+        filter_flipper_pb2_grpc.add_FilterFlipperServicer_to_server(self, server)
+        
     def Initialize(self, request, context):
         if self.device.connected:
             return filter_flipper_pb2.InitializeResponse(success=True)
@@ -26,15 +29,15 @@ class MFF101Servicer(filter_flipper_pb2_grpc.FilterFlipperServicer):
             return filter_flipper_pb2.InitializeResponse(success=False)
 
     def Shutdown(self, request, context):
-        if self.device.connected:
-            return filter_flipper_pb2.ShutdownResponse(success=True)
+        resp = filter_flipper_pb2.ShutdownResponse()
         try:
-            success=self.device.disconnect()
-            return filter_flipper_pb2.ShutdownResponse(success=success)
+            self.device.disconnect()
+            resp.success = True
         except:
             context.set_code(grpc.StatusCode.INTERNAL)
             context.set_details('Failed to connect.')
-            return filter_flipper_pb2.ShutdownResponse(success=False)
+            resp.success = False
+        return resp
 
     def GetPosition(self, request, context):
         resp = filter_flipper_pb2.GetPositionResponse()

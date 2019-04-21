@@ -80,6 +80,7 @@ class MFF101Device:
 
     def disconnect(self):
         if self._motor is None:
-            return 
+            return True
         self._motor.close()
         self._motor = None
+        return True

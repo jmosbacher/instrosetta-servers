@@ -14,6 +14,9 @@ class FW102cServicer(filter_wheel_pb2_grpc.FilterWheelServicer):
         super().__init__(*args, **kwargs)
         self.device = None
 
+    def bind(self, server):
+        filter_wheel_pb2_grpc.add_FilterWheelServicer_to_server(self, server)
+        
     def Initialize(self, request, context):
         if self.device and self.device.connected:
             return filter_wheel_pb2.InitializeResponse(success=True)

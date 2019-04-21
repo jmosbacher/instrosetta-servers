@@ -14,6 +14,9 @@ class EQ77Servicer(light_source_pb2_grpc.LightSourceServicer):
         super().__init__(*args, **kwargs)
         self.device = None
 
+    def bind(self, server):
+        light_source_pb2_grpc.add_LightSourceServicer_to_server(self, server)
+
     def Initialize(self, request, context):
         resp = light_source_pb2.InitializeResponse()
         try:

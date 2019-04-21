@@ -4,27 +4,26 @@
       IMPLEMENTED COMMANDS
 ==================================
 *IDN? : Self identify.
-CALL ->
+CALL 
  - EXIT : 
  - SAVE :
  - RUN :
  - CLEARSCREEN :
 
- - GET ->
+GET 
  - EXPOSURE 
  - WAVELENGTH
  - SLIT_WIDTH
  - GRATING
  - AREA
 
-SET ->
+SET
  - EXPOSURE 
  - WAVELENGTH
  - SLIT_WIDTH
  - GRATING
  - SHUTTER_MODE
  - READOUT_MODE
-
 
 
 ==================================
@@ -39,7 +38,7 @@ function ~ReadInput$()
 return
 
 function ~SendMessage(message$)
-	comwrite(6, message$+TERMINATION$)
+	comwrite(6, message$+"\n")
 	comread(6, response$)
 	if !strcomp(response$, "ACK:"+message$) then
 		WriteResponse = 0
@@ -60,53 +59,47 @@ return
 
 
 /*
+
 ==================================
-            INITIALIZE
+               MAIN
 ==================================
 */
-
 gosub .initialize
-
-
-/*
-==================================
-            MAIN LOOP
-==================================
-*/
-
 while(1)
 i = ~Increment(i)
 gosub .handler
+delay(100)
 wend
+gosub .shutdown
 
 ==================================
             SHUTDOWN
 ==================================
 */
 
-
-gosub .initialize
-
 .shutdown
+return
 
 
 
-
-/*
 ==================================
-            SUB ROUTINES
+            INITIALIZE
 ==================================
 */
 
 .initialize
 baud(6,38400)
+handshake(6,0)
 i=0
 return
 
-.shutdown
-return
+/*
 
-// REQUEST HANDLER ===============>
+/*
+==================================
+          REQUEST HANDLER
+==================================
+*/
 
 .handler
 routine$ = ~ReadInput$()
@@ -128,12 +121,16 @@ case strcomp(routine$,"SET")
 .set
 break
 
-~SendMessage("OK")
+~SendMessage("IDLE")
 selend
 return
 
+/*
+==================================
+           CALL HANDLER
+==================================
+*/
 
-// CALL HANDLER ==================>
 .call
 prop$ = ~ReadInput()
 select case 0
@@ -177,7 +174,12 @@ cls()
 return
 
 
-// GET HANDLER ===================>
+/*
+==================================
+            GET HANDLER
+==================================
+*/
+
 .get
 sub$ = ~ReadInput()
 select case 0
@@ -238,9 +240,12 @@ return
 	print("Corrected area equals" + area$)
 return
 
-// ===============================<
+/*
+==================================
+           SET HANDLER
+==================================
+*/
 
-// SET HANDLER ===================>
 .set
 sub$ = ~ReadInput()
 select case 0

@@ -14,6 +14,9 @@ class CM112Servicer(monochromator_pb2_grpc.MonochromatorServicer):
         super().__init__(*args, **kwargs)
         self.device = CM112Device(*args, **kwargs)
 
+    def bind(self, server):
+        monochromator_pb2_grpc.add_MonochromatorServicer_to_server(self, server)
+        
     def Initialize(self, request, context):
         if self.device.connected:
             return monochromator_pb2.InitializeResponse(success=True)
