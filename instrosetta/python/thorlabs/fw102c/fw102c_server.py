@@ -1,5 +1,4 @@
 
-from instrosetta.interfaces.optomechanics import filter_wheel_pb2_grpc
 from instrosetta.server import RpcServer
 from fw102c_servicer import FW102cServicer
 _ONE_DAY_IN_SECONDS = 60 * 60 * 24
