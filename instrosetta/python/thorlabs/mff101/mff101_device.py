@@ -64,29 +64,22 @@ class MFF101Device:
         return info
 
     def connect(self, port):
-        try:
-            import ftd2xx
-            import ftd2xx.defines as constants
-            motor = ftd2xx.openEx(port)
-            motor.setBaudRate(115200)
-            motor.setDataCharacteristics(constants.BITS_8, constants.STOP_BITS_1, constants.PARITY_NONE)
-            time.sleep(.05)
-            motor.purge()
-            time.sleep(.05)
-            motor.resetDevice()
-            motor.setFlowControl(constants.FLOW_RTS_CTS, 0, 0)
-            motor.setRts()
-            self._motor = motor
-            return True
-        except Exception as e:
-            return False
+        import ftd2xx
+        import ftd2xx.defines as constants
+        motor = ftd2xx.openEx(port)
+        motor.setBaudRate(115200)
+        motor.setDataCharacteristics(constants.BITS_8, constants.STOP_BITS_1, constants.PARITY_NONE)
+        time.sleep(.05)
+        motor.purge()
+        time.sleep(.05)
+        motor.resetDevice()
+        motor.setFlowControl(constants.FLOW_RTS_CTS, 0, 0)
+        motor.setRts()
+        self._motor = motor
+        return True
 
     def disconnect(self):
         if self._motor is None:
             return 
-        try:
-            self._motor.close()
-        except Exception as e:
-            return False
+        self._motor.close()
         self._motor = None
-        return True

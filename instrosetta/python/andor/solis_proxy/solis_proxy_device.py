@@ -143,6 +143,6 @@ class SolisProxy:
         return self._conn.is_open
         
     def disconnect(self):
-        if self._connected:
+        if self.connected:
             self._conn.close()
             
