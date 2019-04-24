@@ -3,43 +3,40 @@ from enum import Enum
 import pint
 from instrosetta.interfaces.light_analysis import spectrograph_pb2
 from instrosetta.interfaces.light_analysis import spectrograph_pb2_grpc
+from instrosetta.servicer import GetterRPC, SetterRPC, simple_rpc
 import solis_proxy_device
-
-ureg = pint.UnitRegistry()
-Q_ = ureg.Quantity
+import solis_proxy_simulator
 
 
 class SolisProxyServicer(spectrograph_pb2_grpc.SpectrographServicer):
+    GetSlitWidth = GetterRPC(spectrograph_pb2.GetSlitWidthResponse, 'slit_width', value_name='magnitude')
+    SetSlitWidth = SetterRPC(spectrograph_pb2.SetSlitWidthResponse, 'slit_width', value_name='magnitude')
+    GetExposure = GetterRPC(spectrograph_pb2.GetExposureResponse, 'exposure', value_name='magnitude')
+    SetExposure = SetterRPC(spectrograph_pb2.SetExposureResponse, 'exposure', value_name='magnitude')
+    GetShutterState = GetterRPC(spectrograph_pb2.GetShutterStateResponse, 'shutter', value_name='magnitude')
+    SetShutterState = SetterRPC(spectrograph_pb2.SetShutterStateResponse, 'shutter', value_name='magnitude')
+    
+    def bind(self, server):
+        spectrograph_pb2_grpc.add_SpectrographServicer_to_server(self, server)
+             
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.device = None
 
-    def bind(self, server):
-        spectrograph_pb2_grpc.add_SpectrographServicer_to_server(self, server)
-
-    def Initialize(self, request, context):
-        resp = spectrograph_pb2.InitializeResponse()
-        try:
-            if self.device:
-                self.device.disconnect()
+    @simple_rpc(spectrograph_pb2.InitializeResponse)
+    def Initialize(self, request, response):
+        if self.device:
+            self.device.disconnect()
+        if request.simulate:
+            self.device = solis_proxy_simulator.SolisProxyDeviceSimulator()
+            self.device.connect()
+        else:
             self.device = solis_proxy_device.SolisProxyDevice()
             self.device.connect(request.serial_port, timeout=request.timeout,)
-            resp.success=True
-        except:
-            context.set_code(grpc.StatusCode.INTERNAL)
-            context.set_details('Failed to connect.')
-            resp.success = False
-        return resp
+        response.success=True
 
-    def Shutdown(self, request, context):
-        resp = spectrograph_pb2.ShutdownResponse()
-        try:
-            self.device.disconnect()
-            resp.success = True
-            
-        except:
-            context.set_code(grpc.StatusCode.INTERNAL)
-            context.set_details('Failed to disconnect.')
-            resp.success = False
-        return resp
+    @simple_rpc(spectrograph_pb2.ShutdownResponse)
+    def Shutdown(self, request, response):
+        self.device.disconnect()
+        response.success = True
     

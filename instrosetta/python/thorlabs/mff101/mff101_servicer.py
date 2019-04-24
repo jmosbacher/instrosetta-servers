@@ -3,6 +3,7 @@ from enum import Enum
 import pint
 from instrosetta.interfaces.optomechanics import filter_flipper_pb2
 from instrosetta.interfaces.optomechanics import filter_flipper_pb2_grpc
+from instrosetta import servicer
 import mff101_device
 
 ureg = pint.UnitRegistry()
@@ -10,6 +11,9 @@ Q_ = ureg.Quantity
 
 
 class MFF101Servicer(filter_flipper_pb2_grpc.FilterFlipperServicer):
+    GetPosition = servicer.simple_get(filter_flipper_pb2.GetPositionResponse,'position')
+    SetPosition = servicer.simple_set(filter_flipper_pb2.SetPositionResponse,'position')
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.device = mff101_device.MFF101Device(*args, **kwargs)
@@ -39,15 +43,6 @@ class MFF101Servicer(filter_flipper_pb2_grpc.FilterFlipperServicer):
             resp.success = False
         return resp
 
-    def GetPosition(self, request, context):
-        resp = filter_flipper_pb2.GetPositionResponse()
-        try:
-            resp.value = filter_flipper_pb2.FlipperPosition[self.device.position]
-        except:
-            context.set_code(grpc.StatusCode.INTERNAL)
-            context.set_details('Failed to get position from device.')
-        return resp
-
     def GetInfo(self, request, context):
         resp = filter_flipper_pb2.GetInfoResponse()
         try:
@@ -57,15 +52,4 @@ class MFF101Servicer(filter_flipper_pb2_grpc.FilterFlipperServicer):
             context.set_details('Failed to get position from device.')
         return resp
 
-    def SetPosition(self, request, context):
-        resp = filter_flipper_pb2.SetPositionResponse()
-        try:
-            self.device.sensors = request.value
-            if request.validate:
-                resp.value = self.device.sensors
-            else:
-                resp.value = request.value
-        except:
-            context.set_code(grpc.StatusCode.INTERNAL)
-            context.set_details('Failed to set position.')
-        return resp
+   

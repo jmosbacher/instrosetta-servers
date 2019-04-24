@@ -301,8 +301,8 @@ return
 
 .setGrating
 	grating$ = ~ReadInput()
-	grating =  val(grating$)
-	SetGrating(grating)
+	gr =  val(grating$)
+	SetGrating(gr)
    	grating$ = GetGrating()
    	print("Grating set to " + grating$) 
 return

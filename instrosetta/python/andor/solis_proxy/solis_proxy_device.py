@@ -19,7 +19,7 @@ class ReadoutMode(TestableEnum):
     IMAGE = 4
 
 
-class SolisProxy:
+class SolisProxyDevice:
     """
     Connects to a proxy script running in
     Andor solis, written with Andor BASIC.
@@ -41,7 +41,7 @@ class SolisProxy:
     @test_connection
     def write(self, msg):
         self._sio.flush()
-        self._sio.write(f'{msg}')
+        self._sio.write(f'{msg}\n')
         time.sleep(0.1)
         resp = self._sio.readline().strip()
         if resp != f"ACK:{msg}":
@@ -53,7 +53,7 @@ class SolisProxy:
         start = time.time()
         while abs(time.time()-start)<timeout:
             resp = self.read()
-            if resp == "OK":
+            if resp == "READY":
                 break
             elif resp != "":
                 responses.append(resp)
@@ -66,66 +66,64 @@ class SolisProxy:
         else:
             return responses
 
-    def query(self, *msgs, timeout=1):
+    def rpc(self, *msgs, timeout=2):
         for msg in msgs:
             self.write(msg)
         resp = self.read_response(timeout)
         return resp
         
     def save(self, path):
-        self.query("CALL","SAVE", path)
+        self.rpc("CALL","SAVE", path)
 
     def clear_screen(self):
-        self.query("CALL","CLEARSCREEN")
+        self.rpc("CALL","CLEARSCREEN")
         
-    def get_shutter_state(self):
-        return self.query("GET","SHUTTER")
+    @property
+    def shutter(self):
+        return self.rpc("GET","SHUTTER")
 
-    def set_shutter_state(self, state: ShutterState):
-        self.query("SET","SHUTTER", state.value)
+    @shutter.setter
+    def shutter(self, state: ShutterState):
+        self.rpc("SET","SHUTTER", state.value)
 
     def run(self):
-        self.query('CALL","RUN')
+        timeout = self.exposure + 5
+        self.rpc('CALL","RUN', timeout=timeout)
 
     @property
     def grating(self):
-        return self.query("GET","GRATING")
+        return self.rpc("GET","GRATING")
 
     @grating.setter
     def grating(self, value):
         if value in [1, 2]:
-            self.query("SET","GRATING", value)
-        while True:
-            if self.grating == f"{value}":
-                break
-            else:
-                time.sleep(4)
+            self.rpc("SET","GRATING", value, timeout=100)
 
     @property
     def wavelength(self):
-        return self.query("GET","WAVELENGTH")
+        return self.rpc("GET","WAVELENGTH")
 
     @wavelength.setter
     def wavelength(self, value):
         if (2000 >= value >= 200):
-            self.query("SET","WAVELENGTH", value)
+            self.rpc("SET","WAVELENGTH", value)
 
     @property
     def exposure(self):
-        return self.query("GET","EXPOSURE")
+        return self.rpc("GET","EXPOSURE")
 
     @exposure.setter
     def exposure(self, value):
-        self.query("SET","EXPOSURE", value)
+        self.rpc("SET","EXPOSURE", value)
 
     @property
     def slit_width(self):
-        return self.query("GET","SLIT_WIDTH")
+        return self.rpc("GET","SLIT_WIDTH")
 
     @slit_width.setter
     def slit_width(self, value):
         if (2500 >= value >=10):
-            self.query("SET","SLIT_WIDTH", value)
+            self.rpc("SET","SLIT_WIDTH", value)
 
     def connect(self, com_port, baudrate=115200, timeout=0.2):
         self.polling_interval = timeout
@@ -145,4 +143,3 @@ class SolisProxy:
     def disconnect(self):
         if self.connected:
             self._conn.close()
-            
